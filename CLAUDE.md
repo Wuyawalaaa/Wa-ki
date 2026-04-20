@@ -73,42 +73,70 @@ Triggered by: "消化 inbox" / "digest inbox" / "整理一下 inbox" / similar.
    - Determine target: existing topic file, `uncategorized.md`, or propose new topic (see §3).
    - Integrate using §4 style conventions.
 3. Flag uncertain categorizations — list them explicitly and ask Luna.
-4. If `project-snapshots/` has content AND new concepts were added → run bridge update (T1 trigger, §6).
+4. If `project-snapshots/` has content AND new concepts were added → generate **proposals** in the digest chat report (see §6.3). Do NOT modify bridge files.
 5. Move processed `inbox.md` content to `archive/inbox/YYYY-MM-DD.md`. Clear active inbox.
 6. Git commit: `digest: YYYY-MM-DD — N items, topics: <list>`.
 7. Summary report: what was integrated where, what's pending review.
 
 ---
 
-## 6. Snapshot & Bridge Protocol (Phase 2 — currently dormant)
+## 6. Snapshot, Bridge & Proposal Protocol (Phase 2 — currently dormant)
 
 Activates when `project-snapshots/` contains files.
 
-### Snapshot triggers
+### 6.1 Snapshot (mirrors project state)
+
+**Purpose:** A read-only summary of a project folder, so the wiki knows what the project currently looks like without re-reading every file.
+
+**Triggers:**
 - **T1 Pre-digest check:** Before inbox digestion, check mtime of all files in projects with snapshots. If any project file is newer than its snapshot → report and offer refresh.
 - **T2 Session startup:** Same check on every new Claude Code session.
 - **T3 Explicit:** "refresh [project] snapshot" → rebuild from scratch.
 
-### Snapshot file shape
-`project-snapshots/<project>-YYYY-MM-DD.md` contains:
+**File shape:** `project-snapshots/<project>-YYYY-MM-DD.md` contains:
 - One-line summary per project document
 - Key concepts used
 - Section outlines
 - File list with mtimes
 
-### Bridge triggers
-- **T1:** After inbox digest with new concepts → scan snapshots for connections → update bridges.
-- **T2:** After snapshot refresh → reconcile bridges with new project structure.
-- **T3 Explicit:** "refresh bridges" → rebuild all.
-- **T4 Staleness:** Session startup — if any bridge > 14 days old, offer refresh.
+### 6.2 Bridge (factual usage record — lazy, explicit only)
 
-### Bridge file shape
-`project-bridges/<project>.md` contains:
-- Mapping: project doc section → wiki concepts referenced
-- Reverse index: wiki concept → where applied in project
-- `pending_review/` section for uncertain connections
+**Purpose:** Records what wiki materials Luna *actually referenced* when producing a specific piece of project work. Historical, not speculative. Lets Luna trace "which ideas fed into which deliverable" and re-audit execution if the underlying knowledge evolves.
+
+**Triggers (explicit only):**
+- **T3 Explicit:** "update [project] bridge" / "record this in the bridge" / similar → append/update entries for the work Luna names.
+- **Reconciliation:** After a snapshot refresh, if paths or section titles in existing bridge entries became stale → offer to reconcile (rename references, flag broken links). Do NOT add new entries during reconciliation.
+
+**Do NOT auto-update bridges** when new wiki content is added. New wiki material existing ≠ it was used. Bridge entries are written only when Luna confirms usage.
+
+**File shape:** `project-bridges/<project>.md` contains:
+- Mapping: project deliverable/section → wiki concepts that informed it (with dates)
+- Reverse index: wiki concept → where Luna applied it in this project
 
 **Critical:** Bridges live in wiki side only. Never write back to project folders.
+
+### 6.3 Proposals (chat-only, no file)
+
+**Purpose:** Dual-purpose — (a) give Luna a heads-up that newly digested material *might* connect to existing project work, (b) let Luna verify whether Claude actually understood the material (if the reasoning is off, the comprehension is off).
+
+**Trigger:** After inbox digest, if `project-snapshots/` is non-empty AND new concepts were added to the wiki → emit proposals inline in the digest chat report. Nothing is written to disk.
+
+**Proposal format (in chat):**
+```
+## Proposals — possible project connections
+
+### [new wiki concept / file]
+- **Possibly relates to:** [project]/[snapshot section or deliverable]
+- **Reasoning:** [one sentence explaining the link — this is the comprehension check]
+- **Confidence:** low / medium / high
+
+(repeat per concept)
+```
+
+**After Luna reviews:**
+- If she confirms a proposal is real AND wants it recorded → that's a T3 bridge update (§6.2).
+- If she says the reasoning is off → note the correction, re-read source if needed, don't record anything.
+- If she ignores them → they vanish with the chat. That's fine; they're ephemeral by design.
 
 ---
 
