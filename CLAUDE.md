@@ -56,6 +56,20 @@ Luna's existing writing style (mirror it):
 - **Concise over verbose.** No filler. No meta-commentary about what you're about to say.
 - **Multilingual.** Match source material language when quoting. Otherwise English for precision, Chinese when Luna prefers or concept emerged in Chinese first.
 
+### File naming
+- `sources/YYYY-MM-DD-<slug>.md` — **kebab-case** slug (e.g. `2026-04-20-karpathy-gist.md`). Dated, one-off archives.
+- `topics/<Concept-Name>.md` — **TitleCase-With-Hyphens** (e.g. `Strength-Of-Intent.md`, `Narrative-First-Strategy.md`). Stable concept entries.
+- Rationale: a glance at a `[[wikilink]]` tells you whether it points to a dated source archive or a canonical concept page.
+
+### Frontmatter (required on every topic file)
+Schema (see §11 for the full template): `title`, `type`, `tags`, `sources`, `last_updated`, `provenance`.
+
+- `provenance: mostly-sourced | mixed | mostly-inference` — the page's overall lean.
+- **Page-level `provenance` does NOT replace per-claim `【事实】`/`【推断】` tagging.** Both coexist:
+  - Frontmatter `provenance` = *what the page leans toward as a whole*.
+  - Inline `【事实】`/`【推断】` = *which specific claim* is grounded vs inferred.
+- A `mostly-sourced` page can still contain `【推断】` lines; a `mostly-inference` page can still have `【事实】` anchors. The two layers together let Luna scan for overall reliability (frontmatter) and audit individual claims (inline).
+
 ---
 
 ## 5. Inbox Digestion Flow
@@ -212,9 +226,18 @@ Always present a plan and wait for explicit `ok` / `好` / similar before execut
 ## 11. Topic File Template
 
 ```markdown
+---
+title: <Topic Name>
+type: concept | framework | case-study | person | other
+tags: [tag1, tag2]
+sources:
+  - ../sources/YYYY-MM-DD-<slug>.md
+last_updated: YYYY-MM-DD
+provenance: mostly-sourced | mixed | mostly-inference
+---
+
 # <Topic Name>
 > <One-sentence description of scope>
-> Last digested: YYYY-MM-DD
 
 ## <Concept 1>
 
@@ -226,7 +249,7 @@ Always present a plan and wait for explicit `ok` / `好` / similar before execut
 - [<title>](../sources/YYYY-MM-DD-<slug>.md)
 
 ### Related
-- [[<other-topic>#<section>]]
+- [[<Other-Topic>#<section>]]
 
 ---
 
@@ -236,7 +259,39 @@ Always present a plan and wait for explicit `ok` / `好` / similar before execut
 
 ---
 
-## 12. When In Doubt
+## 12. Lint / Health Check
+
+**Purpose:** Ingestion is additive — it only adds. Lint is the periodic compaction pass that catches what silently accumulates: contradictions, orphans, stale claims, missing concept pages, weak cross-linking, provenance drift, coverage gaps.
+
+### Trigger
+- Explicit only: "lint the wiki" / "wiki 体检" / "check for drift" / similar.
+- No auto-trigger. Lint surfaces issues that need Luna's decisions; running it unprompted would spam.
+
+### What lint checks
+1. **Contradictions** — two topic files making opposing claims about the same concept.
+2. **Stale claims** — claims superseded by newer sources ingested later but not back-propagated.
+3. **Orphans** — topic files nothing links to (effectively lost to query).
+4. **Missing concept pages** — concept names repeated across 3+ topic files but lacking their own page.
+5. **Broken cross-refs** — `[[wikilink]]` targets that don't exist (renamed/deleted).
+6. **Provenance drift** — pages whose frontmatter `provenance:` says `mostly-sourced` but whose body is mostly `【推断】` (or vice versa).
+7. **Coverage gaps** — areas where Luna has expressed ongoing interest (via inbox frequency or explicit mention) but the wiki has thin coverage.
+
+### Output format
+A chat report, grouped by category. Each finding lists:
+- File path (+ line number where applicable)
+- Severity: high (contradiction / broken ref) / medium (drift / orphan) / low (gap / missing page)
+- Suggested action
+
+**No files are modified during lint.** Lint only reports.
+
+### After Luna reviews
+- She decides per finding: fix / defer / ignore.
+- Non-trivial content edits go through §9 approval.
+- Trivial fixes (broken link rename, inserting a missing `[[wikilink]]`) proceed auto per §10.
+
+---
+
+## 13. When In Doubt
 
 - **Uncertain categorization?** → `uncategorized.md`, flag for Luna.
 - **Uncertain intent?** → ask before acting.
@@ -245,10 +300,11 @@ Always present a plan and wait for explicit `ok` / `好` / similar before execut
 
 ---
 
-## 13. Non-negotiables
+## 14. Non-negotiables
 
 - Never write outside `~/Desktop/wiki LLM/` without explicit Luna approval per operation.
 - Never silently delete anything — always offer `archive/` first.
 - Never "clean up" wiki structure on your own initiative — propose, wait, execute.
 - Never embed project-specific references inside topic files — those belong in `project-bridges/` only.
+- **Never silently overwrite contradictions.** If a new source contradicts existing wiki content, flag the conflict and let Luna decide (keep old / keep new / reconcile / keep both with context). Never resolve it on your own.
 - Never modify this CLAUDE.md without Luna's explicit approval.
