@@ -70,11 +70,16 @@ Schema (see §11 for the full template): `title`, `type`, `tags`, `sources`, `la
   - Inline `【事实】`/`【推断】` = *which specific claim* is grounded vs inferred.
 - A `mostly-sourced` page can still contain `【推断】` lines; a `mostly-inference` page can still have `【事实】` anchors. The two layers together let Luna scan for overall reliability (frontmatter) and audit individual claims (inline).
 
+### Tags (controlled vocabulary)
+- Approved tags live in `_meta/taxonomy.md`. That file doesn't exist yet; create on first tag use.
+- New tags require Luna's explicit OK before being added. Prevents drift (`mev` vs `MEV` vs `miner-extractable-value` silently coexisting).
+- When proposing a new tag, check `_meta/taxonomy.md` for near-matches first; if close, suggest using the existing one.
+
 ---
 
 ## 5. Inbox Digestion Flow
 
-Triggered by: "消化 inbox" / "digest inbox" / "整理一下 inbox" / similar.
+Triggered by: `/wiki-ingest` / "消化 inbox" / "digest inbox" / "整理一下 inbox" / similar.
 
 **Steps:**
 
@@ -86,11 +91,12 @@ Triggered by: "消化 inbox" / "digest inbox" / "整理一下 inbox" / similar.
    - Archive fetched content to `sources/YYYY-MM-DD-<slug>.md`.
    - Determine target: existing topic file, `uncategorized.md`, or propose new topic (see §3).
    - Integrate using §4 style conventions.
-3. Flag uncertain categorizations — list them explicitly and ask Luna.
-4. If `project-snapshots/` has content AND new concepts were added → generate **proposals** in the digest chat report (see §6.3). Do NOT modify bridge files.
-5. Move processed `inbox.md` content to `archive/inbox/YYYY-MM-DD.md`. Clear active inbox.
-6. Git commit: `digest: YYYY-MM-DD — N items, topics: <list>`.
-7. Summary report: what was integrated where, what's pending review.
+3. **Cross-linker pass.** After all items are integrated, scan the full wiki for plain-text mentions of existing topic titles that aren't yet `[[wikilinked]]`; wrap matches. Skip mentions inside code blocks, inside `sources/` (archival), and inside already-linked spans. Report the count of links inserted.
+4. Flag uncertain categorizations — list them explicitly and ask Luna.
+5. If `project-snapshots/` has content AND new concepts were added → generate **proposals** in the digest chat report (see §6.3). Do NOT modify bridge files.
+6. Move processed `inbox.md` content to `archive/inbox/YYYY-MM-DD.md`. Clear active inbox.
+7. Git commit: `digest: YYYY-MM-DD — N items, topics: <list>`.
+8. Summary report: what was integrated where, what's pending review.
 
 ---
 
@@ -105,7 +111,7 @@ Activates when `project-snapshots/` contains files.
 **Triggers:**
 - **T1 Pre-digest check:** Before inbox digestion, check mtime of all files in projects with snapshots. If any project file is newer than its snapshot → report and offer refresh.
 - **T2 Session startup:** Same check on every new Claude Code session.
-- **T3 Explicit:** "refresh [project] snapshot" → rebuild from scratch.
+- **T3 Explicit:** `/wiki-snapshot-refresh [project]` / "refresh [project] snapshot" → rebuild from scratch.
 
 **File shape:** `project-snapshots/<project>-YYYY-MM-DD.md` contains:
 - One-line summary per project document
@@ -118,7 +124,7 @@ Activates when `project-snapshots/` contains files.
 **Purpose:** Records what wiki materials Luna *actually referenced* when producing a specific piece of project work. Historical, not speculative. Lets Luna trace "which ideas fed into which deliverable" and re-audit execution if the underlying knowledge evolves.
 
 **Triggers (explicit only):**
-- **T3 Explicit:** "update [project] bridge" / "record this in the bridge" / similar → append/update entries for the work Luna names.
+- **T3 Explicit:** `/wiki-bridge-update [project]` / "update [project] bridge" / "record this in the bridge" → append/update entries for the work Luna names.
 - **Reconciliation:** After a snapshot refresh, if paths or section titles in existing bridge entries became stale → offer to reconcile (rename references, flag broken links). Do NOT add new entries during reconciliation.
 
 **Do NOT auto-update bridges** when new wiki content is added. New wiki material existing ≠ it was used. Bridge entries are written only when Luna confirms usage.
@@ -264,7 +270,7 @@ provenance: mostly-sourced | mixed | mostly-inference
 **Purpose:** Ingestion is additive — it only adds. Lint is the periodic compaction pass that catches what silently accumulates: contradictions, orphans, stale claims, missing concept pages, weak cross-linking, provenance drift, coverage gaps.
 
 ### Trigger
-- Explicit only: "lint the wiki" / "wiki 体检" / "check for drift" / similar.
+- Explicit only: `/wiki-lint` / "lint the wiki" / "wiki 体检" / "check for drift".
 - No auto-trigger. Lint surfaces issues that need Luna's decisions; running it unprompted would spam.
 
 ### What lint checks
@@ -300,7 +306,27 @@ A chat report, grouped by category. Each finding lists:
 
 ---
 
-## 14. Non-negotiables
+## 14. Slash Commands (index)
+
+Canonical commands Luna can invoke. Each one references the section that defines full behavior.
+
+| Command | Args | Purpose | Defined in |
+|---|---|---|---|
+| `/wiki-ingest` | — | Digest inbox: fetch → archive → categorize → integrate → cross-link → propose | §5 |
+| `/wiki-query` | `<question>` | Answer a question from wiki content with citations | ad-hoc |
+| `/wiki-lint` | — | Health check: contradictions, orphans, stale, missing pages, broken refs, drift, gaps | §12 |
+| `/wiki-crosslink` | — | Run cross-linker pass standalone (normally auto-runs in `/wiki-ingest` step 3) | §5 step 3 |
+| `/wiki-snapshot-refresh` | `[project]` | Rebuild project snapshot from scratch | §6.1 |
+| `/wiki-bridge-update` | `[project]` | Record bridge entries for confirmed wiki→project usage | §6.2 |
+| `/wiki-status` | — | Quick report: inbox count, uncategorized count, last digest, snapshot/bridge ages | ad-hoc |
+
+**Implementation in Claude Code:** slash commands are markdown files at `.claude/commands/<name>.md`. The file content is the prompt Claude runs when invoked. Luna can add / edit / delete commands anytime — nothing is locked in, and the file format is plain markdown.
+
+**Current state:** this table is the spec; the `.claude/commands/` files don't exist yet. Natural-language triggers (e.g. "消化 inbox") still work regardless of whether the slash-command files are created.
+
+---
+
+## 15. Non-negotiables
 
 - Never write outside `~/Desktop/wiki LLM/` without explicit Luna approval per operation.
 - Never silently delete anything — always offer `archive/` first.
