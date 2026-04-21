@@ -1,11 +1,1 @@
-# Inbox
-
-把看到的东西随手扔这里：链接、引用、截图路径、半成品想法都行。
-不用格式化，不用判断归类 —— 那是 Claude Code 消化时的工作。
-
-准备好后跟 Claude Code 说 **"消化 inbox"**。
-
----
-
-<!-- 新条目往下加 -->
-
+/Users/luna/Library/Mobile Documents/com~apple~CloudDocs/wiki-llm-inbox.md

@@ -26,6 +26,12 @@ Wiki content should remain **project-agnostic**. Do not embed references to spec
 - Writing to ANY path outside `~/Desktop/wiki LLM/`
 - Reading `~/Desktop/` items Luna has not explicitly authorized — especially personal files (wedding, visa, payslips, medical, rental, passport photos, `Marital RFE/`, etc.)
 
+### `inbox.md` is a symlink to iCloud
+- `~/Desktop/wiki LLM/inbox.md` is a symbolic link. The real file lives at `~/Library/Mobile Documents/com~apple~CloudDocs/wiki-llm-inbox.md`.
+- Why: so Luna can append from iPhone via iCloud sync.
+- For Claude: transparent — read/write/edit on the `inbox.md` path work as normal; the filesystem resolves through the symlink. No special handling needed.
+- Scope note: this one symlinked file is the only writable path that physically lies outside `~/Desktop/wiki LLM/`. The permission model is still "one conceptual folder"; the iCloud location is a plumbing detail.
+
 **Enforcement:** If a task seems to require writing outside this folder, STOP. State the exact path you would write to, explain why, and wait for Luna's explicit `ok`.
 
 ---
