@@ -38,15 +38,32 @@ Wiki content should remain **project-agnostic**. Do not embed references to spec
 
 ## 3. Structure Philosophy
 
-**Emergent, not pre-planned.**
+**Atomic pages, flat topics, emergent clusters.**
 
-- Begin with everything flowing into `uncategorized.md`.
-- **Topic split threshold:** When 3+ items in `uncategorized.md` share a theme → propose a new `topics/<name>.md`. Wait for approval before creating.
-- **Folder upgrade threshold:** When a topic file accumulates 5+ differentiable sub-themes (or exceeds ~1000 lines) → propose upgrading to `topics/<name>/` folder with `index.md` + sub-files. Wait for approval.
-- **Merge:** When two topic files overlap substantially or reference each other repeatedly → propose merging. Wait for approval.
-- **Delete:** Default to moving into `archive/`, not real deletion. Only delete for real when Luna says "permanently delete" or "真删".
+### Granularity: one concept per page
+- Each page in `topics/` captures exactly one concept, framework, case, or person. Split a page the moment it starts covering two distinct ideas.
+- **No peer-count threshold.** A single item about a clearly distinct concept goes directly to its own `topics/<Name>.md` — it does NOT wait for "2 more peers" to graduate. (Earlier 3-item / 5-theme rules retired 2026-04-21; they conflicted with Karpathy/Zettelkasten atomicity and with GBrain route-by-type.)
 
-**Principle:** Wiki shape should reflect how Luna's thinking has evolved, not a pre-imposed taxonomy.
+### Organization: flat `topics/`, no subfolders
+- All topic pages live at `topics/<Title>.md`. No `topics/concepts/`, no per-domain subfolders.
+- Type distinctions live in frontmatter (`type: [concept, framework]`, multi-valued), not in directory structure.
+- Rationale: content like "Paul Graham on startup principles" could be a concept AND a person AND a framework. Folders force a single-bucket choice; multi-valued frontmatter doesn't.
+
+### `uncategorized.md`: orphan-bucket only
+- Used only when content is genuinely too vague to give its own atomic page.
+- NOT a pre-queue. If a concept is clearly distinct, it gets its own page immediately.
+
+### Maps of Content (MOCs)
+- When 4+ atomic pages form a discoverable cluster, propose a `topics/_MOC-<Cluster>.md` as a navigation hub linking them.
+- MOCs contain links + brief descriptions, not claims. They're navigation, not content.
+- `_MOC-` prefix keeps them sorted together in Finder/Obsidian.
+
+### Operations
+- **Merge:** two pages cover the same concept → merge into survivor, preserve both sources, delete duplicate. Propose + wait for approval (§9).
+- **Split:** page covers 2+ distinct ideas → split into atomic pages, cross-link. Propose + wait for approval.
+- **Delete:** default to `archive/`. Only delete-for-real when Luna says "permanently delete" / "真删".
+
+**Principle:** Wiki shape emerges from content distinctness, not pre-imposed taxonomy.
 
 ---
 
@@ -68,13 +85,47 @@ Luna's existing writing style (mirror it):
 - Rationale: a glance at a `[[wikilink]]` tells you whether it points to a dated source archive or a canonical concept page.
 
 ### Frontmatter (required on every topic file)
-Schema (see §11 for the full template): `title`, `type`, `tags`, `sources`, `last_updated`, `provenance`.
+Full schema (see §11 for template):
 
-- `provenance: mostly-sourced | mixed | mostly-inference` — the page's overall lean.
-- **Page-level `provenance` does NOT replace per-claim `【事实】`/`【推断】` tagging.** Both coexist:
-  - Frontmatter `provenance` = *what the page leans toward as a whole*.
-  - Inline `【事实】`/`【推断】` = *which specific claim* is grounded vs inferred.
-- A `mostly-sourced` page can still contain `【推断】` lines; a `mostly-inference` page can still have `【事实】` anchors. The two layers together let Luna scan for overall reliability (frontmatter) and audit individual claims (inline).
+```yaml
+---
+title: <Canonical Title>
+type: [concept, framework, case, person, ...]   # multi-valued
+aliases: [alt spelling, other-language name, abbreviation, ...]
+tags: [tag1, tag2]
+sources:
+  XX: <short description> → ../sources/<file>.md
+  YY: <short description> → ../sources/<file>.md
+last_updated: YYYY-MM-DD
+provenance: mostly-sourced | mixed | mostly-inference
+---
+```
+
+- **`type:` is multi-valued** — a page can be `[framework, methodology]` or `[person, thinker]`. Avoids forced single-bucket routing.
+- **`aliases:`** — all name variants (other languages, abbreviations, alternate spellings). Used by §5 dedup check to prevent duplicate pages. A new capture mentioning "先卖后建" matches an existing `Sell-Before-Build.md` page via alias, not by creating a new one.
+- **`sources:`** — shortcode map. Each entry: 2-3 letter code → full description → path to archived source. Referenced inline by `[XX]` citations (see below).
+- **`provenance:`** — page-level lean. Does NOT replace per-claim `【事实】`/`【推断】` tagging. Both coexist: frontmatter = what the page leans toward as a whole; inline tags = which specific claim is grounded vs. inferred.
+
+### Three-voice tagging (on every claim)
+- **`【事实】`** — claim drawn from a cited source. Always followed by `[XX]` citation.
+- **`【推断】`** — Claude's neutral third-party inference or synthesis. No citation needed; attribution to Claude is implicit. Stays neutral — never mimics Luna's style.
+- **`【Luna】`** / **`【我的看法】`** — Luna's explicit position. No citation needed; attribution to her is implicit. Lives on topic pages only after she confirms / promotes from `thoughts.md`.
+
+### Inline citations
+- Each `【事实】` claim ends (or the paragraph ends) with a shortcode: `[XX]`, referencing the `sources:` map in frontmatter.
+- Multi-source: `[XX, YY]`.
+- A single `[XX]` at the end of a paragraph covers all unattributed sentences in it.
+- 【推断】 and 【Luna】 lines never take a citation.
+- Example:
+  ```markdown
+  【事实】Validate via Figma prototypes and 30 sales conversations before
+  engineering begins. A 30% conversion rate signals market urgency. [TH]
+
+  【推断】The 30% threshold likely assumes a curated target list with
+  identified pain points, not generic cold outreach.
+
+  【Luna】I'd use 10% as the threshold for Remi's B2B cold-start.
+  ```
 
 ### Tags (controlled vocabulary)
 - Approved tags live in `_meta/taxonomy.md`. That file doesn't exist yet; create on first tag use.
@@ -87,22 +138,61 @@ Schema (see §11 for the full template): `title`, `type`, `tags`, `sources`, `la
 
 Triggered by: `/wiki-ingest` / "消化 inbox" / "digest inbox" / "整理一下 inbox" / similar.
 
-**Steps:**
+### Steps
 
-1. Read `inbox.md` top to bottom.
-2. For each distinct item (URL, quote, screenshot, note, Hermes block):
-   - **If URL:** WebFetch the content. If auth-walled (login required), note this and ask Luna to paste content manually or skip.
-   - **If `[Hermes/*]` block:** treat per §7.
-   - **If image path:** copy reference to `sources/images/`, summarize image content via vision.
-   - Archive fetched content to `sources/YYYY-MM-DD-<slug>.md`.
-   - Determine target: existing topic file, `uncategorized.md`, or propose new topic (see §3).
-   - Integrate using §4 style conventions.
-3. **Cross-linker pass.** After all items are integrated, scan the full wiki for plain-text mentions of existing topic titles that aren't yet `[[wikilinked]]`; wrap matches. Skip mentions inside code blocks, inside `sources/` (archival), and inside already-linked spans. Report the count of links inserted.
-4. Flag uncertain categorizations — list them explicitly and ask Luna.
-5. If `project-snapshots/` has content AND new concepts were added → generate **proposals** in the digest chat report (see §6.3). Do NOT modify bridge files.
-6. Move processed `inbox.md` content to `archive/inbox/YYYY-MM-DD.md`. Clear active inbox.
-7. Git commit: `digest: YYYY-MM-DD — N items, topics: <list>`.
-8. Summary report: what was integrated where, what's pending review.
+**1. Read `inbox.md`** top to bottom. Identify distinct items.
+
+**2. Prefix detection.** For each item, detect the capture prefix on its first line:
+
+| Prefix | Meaning | Routes to |
+|---|---|---|
+| *(none)* | Content Luna has pre-judged worth keeping | **Auto-ingest** (step 3) |
+| `?` / `？` / any sequence of question marks (mixed CN/EN, any count) | Luna wants a summary + proposal before anything is written | **Review mode** (step 4) |
+| `💡` / `[idea]` | Luna's own thought, not external content | **Thoughts routing** (step 5) |
+
+**3. Auto-ingest path** (no prefix):
+
+  a. **Fetch source.** If URL, WebFetch. If auth-walled, note and ask Luna to paste manually or skip. If `[Hermes/*]` block, treat per §7. If image, copy to `sources/images/` + summarize via vision.
+
+  b. **Archive** to `sources/YYYY-MM-DD-<slug>.md` (kebab-case slug per §4).
+
+  c. **Dedup check (MANDATORY before any write to `topics/`):**
+  - Extract the candidate concept's canonical name from the content.
+  - Grep `topics/` for: exact title match, fuzzy title match, and any hit in `aliases:` fields across all pages (any language).
+  - **If match found → UPDATE** the existing page: merge new info into the right section, add any new aliases, append new source shortcode + entry.
+  - **If no match → CREATE** a new atomic page `topics/<Canonical-Title>.md` with aliases pre-populated from content variants.
+  - **Report ambiguous matches** to Luna for a decision ("this could be an update to `Fake-Door-Testing.md` or a new page — which?").
+
+  d. **Integrate** using §4 style: frontmatter (with `aliases:` and `sources:`), three-voice tags, inline `[XX]` citations.
+
+**4. Review mode path** (`?` prefix):
+
+  a. Fetch + summarize (same as 3a).
+  b. **Propose** in chat: suggested target page (existing / new / uncategorized / thoughts), value assessment (high / med / low), any dedup matches detected.
+  c. **Wait for Luna's verdict** before writing anywhere. She can say: integrate / park in `thoughts.md` / discard / ask follow-up.
+
+**5. Thoughts routing path** (`💡` / `[idea]` prefix):
+
+  - Do NOT fetch or archive — this is Luna's own thought.
+  - Append entry to `thoughts.md` with format: `## YYYY-MM-DD — <slug>` + fields `关于` (context/trigger), `可能关联` (project/concept tags), `想法` (1-3 sentences).
+  - Do NOT write to `topics/`. Thoughts only graduate to `【Luna】` lines on topic pages when Luna explicitly promotes them.
+
+**6. Cross-linker pass** (after all items processed). Scan the full wiki for plain-text mentions of existing topic titles / aliases that aren't yet `[[wikilinked]]`; wrap matches. Skip code blocks, `sources/` content, and already-linked spans. Report count.
+
+**7. Flag uncertainties** — list unclear dedup matches, ambiguous categorizations, or items where §4 style required a judgment call. Ask Luna.
+
+**8. Proposals** — if `project-snapshots/` has content AND new concepts were added → generate project-connection proposals in the digest chat report (see §6.3). Do NOT modify bridge files.
+
+**9. Archive + clear.** Move processed `inbox.md` content to `archive/inbox/YYYY-MM-DD.md`. Reset `inbox.md` to empty template.
+
+**10. Git commit:** `digest: YYYY-MM-DD — N items (X updated, Y created, Z thoughts), topics: <list>`.
+
+**11. Summary report** in chat:
+  - What was UPDATED (existing pages, new paragraphs added)
+  - What was CREATED (new atomic pages)
+  - What was parked in review (awaiting verdict)
+  - What went to `thoughts.md`
+  - What's flagged for Luna's decision
 
 ---
 
@@ -206,21 +296,37 @@ Every new Claude Code session in this folder:
 3. If `inbox.md` is non-empty → report item count and latest entry timestamp. **Do NOT auto-digest.**
 4. Proceed with Luna's request.
 
+### During a session — thoughts.md retrieval hook
+
+When Luna brings up a project (mentions `qf` / `clinamen` / `remi` / `ckg` / another named project) or is actively working on project-specific content:
+
+- Read `thoughts.md`.
+- Scan for entries whose `可能关联` field mentions that project name or a concept clearly connected to it.
+- Surface a compact list in chat:
+  > 📔 You have N thoughts tagged `<project>`:
+  > - [YYYY-MM-DD] <slug> — <想法 first sentence>
+  > - ...
+  > Want to open any?
+- Luna decides whether to revisit, discard, or promote to a topic page.
+- Do this **once per session** per project (not repeatedly).
+
 ---
 
 ## 9. Operations Requiring Luna's Approval
 
 Always present a plan and wait for explicit `ok` / `好` / similar before executing:
 
-- Creating a new top-level topic file
-- Splitting a topic file into a folder
-- Merging topic files
-- Moving content between topics
+- Splitting a topic page into multiple atomic pages
+- Merging topic pages
+- Moving content between topic pages
 - Any deletion — even to `archive/`
 - Refreshing snapshots
 - Writing to any path outside `~/Desktop/wiki LLM/` (normally forbidden, §2)
 - Large structural reorganization
 - Bulk rewrites of existing content
+- Creating `_MOC-*.md` (Map of Content) pages — propose cluster + included pages first
+
+Note: **creating a new atomic topic page during ingest is auto-allowed** (see §10) — it's part of the normal digest flow when dedup finds no match. Luna controls this via the `?` prefix if she wants pre-write review.
 
 ---
 
@@ -239,34 +345,43 @@ Always present a plan and wait for explicit `ok` / `好` / similar before execut
 
 ```markdown
 ---
-title: <Topic Name>
-type: concept | framework | case-study | person | other
+title: <Canonical Title>
+type: [concept, framework]       # multi-valued, from §4 allowed list
+aliases: [alt spelling, 其他语言名, abbreviation]
 tags: [tag1, tag2]
 sources:
-  - ../sources/YYYY-MM-DD-<slug>.md
+  XX: <short description> → ../sources/YYYY-MM-DD-<slug>.md
+  YY: <short description> → ../sources/YYYY-MM-DD-<slug>.md
 last_updated: YYYY-MM-DD
 provenance: mostly-sourced | mixed | mostly-inference
 ---
 
-# <Topic Name>
+# <Canonical Title>
+
 > <One-sentence description of scope>
 
-## <Concept 1>
+## <Section 1>
 
-【事实/推断】 <core statement in one sentence>
+【事实】<Cited fact.> [XX]
 
-<elaboration, context, nuance — only what's needed>
+<Elaboration — more context drawn from the same source.> [XX]
 
-### Sources
-- [<title>](../sources/YYYY-MM-DD-<slug>.md)
+【推断】<Claude's neutral third-party inference. No citation.>
 
-### Related
-- [[<Other-Topic>#<section>]]
+【Luna】<Luna's explicit take. No citation. Only present after she promotes from thoughts.md.>
+
+## <Section 2>
+
+【事实】<Another cited fact, possibly from a different source.> [YY]
+
+<Mixed-source paragraph: this sentence is from XX. This one from YY.> [XX, YY]
 
 ---
 
-## <Concept 2>
-...
+## Related
+
+- [[<Other-Topic>]]
+- [[_MOC-<Cluster>]]
 ```
 
 ---
