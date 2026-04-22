@@ -72,9 +72,7 @@ Wiki content should remain **project-agnostic**. Do not embed references to spec
 Luna's existing writing style (mirror it):
 
 - **Tables for structured comparison.** Prefer tables over prose when comparing options, listing attributes, or tracking status.
-- **`【事实】` tag** — for facts with clear source citation.
-- **`【推断】` tag** — for interpretations, inference, speculation, or judgment calls.
-- **Every concept cites its source.** Link back to `sources/` files.
+- **Three-voice tagging on every claim.** See the full definition below.
 - **Cross-references** use `[[filename#section]]` inline or `[text](relative/path.md)` for prose.
 - **Concise over verbose.** No filler. No meta-commentary about what you're about to say.
 - **Multilingual.** Match source material language when quoting. Otherwise English for precision, Chinese when Luna prefers or concept emerged in Chinese first.
@@ -108,13 +106,14 @@ provenance: mostly-sourced | mixed | mostly-inference
 
 ### Three-voice tagging (on every claim)
 - **`【事实】`** — claim drawn from a cited source. Always followed by `[XX]` citation.
-- **`【推断】`** — Claude's neutral third-party inference or synthesis. No citation needed; attribution to Claude is implicit. Stays neutral — never mimics Luna's style.
+- **`【推断】`** — neutral LLM inference or synthesis (Claude or Hermes/Gemini). No citation needed. Stays neutral — never mimics Luna's style. For Hermes-originated inference, the source archive records it came from Gemini (see §7).
 - **`【Luna】`** / **`【我的看法】`** — Luna's explicit position. No citation needed; attribution to her is implicit. Lives on topic pages only after she confirms / promotes from `thoughts.md`.
 
 ### Inline citations
 - Each `【事实】` claim ends (or the paragraph ends) with a shortcode: `[XX]`, referencing the `sources:` map in frontmatter.
 - Multi-source: `[XX, YY]`.
 - A single `[XX]` at the end of a paragraph covers all unattributed sentences in it.
+- **Inheritance in tables and lists.** A 【tag】`[XX]` at the head of a paragraph, table, or bulleted list covers every row/bullet below it until the next 【tag】 or section break. Rows do not need per-row citation. A row starting with a different 【tag】 breaks inheritance from that row onward.
 - 【推断】 and 【Luna】 lines never take a citation.
 - Example:
   ```markdown
@@ -127,10 +126,10 @@ provenance: mostly-sourced | mixed | mostly-inference
   【Luna】I'd use 10% as the threshold for Remi's B2B cold-start.
   ```
 
-### Tags (controlled vocabulary)
-- Approved tags live in `_meta/taxonomy.md`. That file doesn't exist yet; create on first tag use.
-- New tags require Luna's explicit OK before being added. Prevents drift (`mev` vs `MEV` vs `miner-extractable-value` silently coexisting).
-- When proposing a new tag, check `_meta/taxonomy.md` for near-matches first; if close, suggest using the existing one.
+### Tags (currently dormant)
+- **Status:** unused for now. Leave `tags: []` in frontmatter. Retrieval currently relies on `aliases:` + `[[wikilinks]]` + full-text grep, which is sufficient at solo-wiki scale.
+- **Re-activation gate:** when Luna finds retrieval actually failing (a concept she knows exists but can't locate), that's the signal to turn tags on.
+- **If re-activated:** approved tags will live in `_meta/taxonomy.md` — create on first tag use, new tags require Luna's OK, check for near-matches before adding (prevents `mev` vs `MEV` vs `miner-extractable-value` drift).
 
 ---
 
@@ -163,7 +162,7 @@ Triggered by: `/wiki-ingest` / "消化 inbox" / "digest inbox" / "整理一下 i
   - **If no match → CREATE** a new atomic page `topics/<Canonical-Title>.md` with aliases pre-populated from content variants.
   - **Report ambiguous matches** to Luna for a decision ("this could be an update to `Fake-Door-Testing.md` or a new page — which?").
 
-  d. **Integrate** using §4 style: frontmatter (with `aliases:` and `sources:`), three-voice tags, inline `[XX]` citations.
+  d. **Integrate** using §4 style: frontmatter (with `aliases:` and `sources:`), 【事实】 + 【推断】 tags, inline `[XX]` citations. 【Luna】 lines only appear after she promotes from `thoughts.md` — never written during ingest.
 
 **4. Review mode path** (`?` prefix):
 
@@ -333,7 +332,8 @@ Note: **creating a new atomic topic page during ingest is auto-allowed** (see §
 ## 10. Operations Auto-allowed (no approval)
 
 - Appending to existing topic files during inbox digestion
-- Moving clearly-fitting items from `uncategorized.md` to existing topic files
+- Creating a new atomic topic page during ingest when dedup finds no match (§5 step 3c)
+- Promoting `uncategorized.md` entries to atomic pages or merging into existing topics when fit is clear
 - Archiving sources and inbox items
 - Git commits of your own changes
 - Answering Luna's direct questions about wiki content
@@ -399,7 +399,7 @@ provenance: mostly-sourced | mixed | mostly-inference
 2. **Stale claims** — claims superseded by newer sources ingested later but not back-propagated.
 3. **Orphans** — topic files nothing links to (effectively lost to query).
 4. **Missing concept pages** — concept names repeated across 3+ topic files but lacking their own page.
-5. **Broken cross-refs** — `[[wikilink]]` targets that don't exist (renamed/deleted).
+5. **Broken cross-refs** — `[[wikilink]]` targets that don't exist (renamed/deleted). Before flagging, try resolving through `aliases:` fields — a link that matches an alias is valid.
 6. **Provenance drift** — pages whose frontmatter `provenance:` says `mostly-sourced` but whose body is mostly `【推断】` (or vice versa).
 7. **Coverage gaps** — areas where Luna has expressed ongoing interest (via inbox frequency or explicit mention) but the wiki has thin coverage.
 
@@ -420,7 +420,7 @@ A chat report, grouped by category. Each finding lists:
 
 ## 13. When In Doubt
 
-- **Uncertain categorization?** → `uncategorized.md`, flag for Luna.
+- **Uncertain categorization?** → report the ambiguous match per §5 step 3c and let Luna decide. Default to creating an atomic page, not dumping to `uncategorized.md`. Only genuinely formless content goes to `uncategorized.md`.
 - **Uncertain intent?** → ask before acting.
 - **Task seems to require forbidden access?** → refuse and explain.
 - **Judgment call not covered here?** → ask Luna. If the answer has long-term value, propose amending this CLAUDE.md.
@@ -433,10 +433,10 @@ Canonical commands Luna can invoke. Each one references the section that defines
 
 | Command | Args | Purpose | Defined in |
 |---|---|---|---|
-| `/wiki-ingest` | — | Digest inbox: fetch → archive → categorize → integrate → cross-link → propose | §5 |
+| `/wiki-ingest` | — | Digest inbox: detect prefix → fetch → archive → dedup → update-or-create → cross-link → propose | §5 |
 | `/wiki-query` | `<question>` | Answer a question from wiki content with citations | ad-hoc |
 | `/wiki-lint` | — | Health check: contradictions, orphans, stale, missing pages, broken refs, drift, gaps | §12 |
-| `/wiki-crosslink` | — | Run cross-linker pass standalone (normally auto-runs in `/wiki-ingest` step 3) | §5 step 3 |
+| `/wiki-crosslink` | — | Run cross-linker pass standalone (normally auto-runs in `/wiki-ingest` step 6) | §5 step 6 |
 | `/wiki-snapshot-refresh` | `[project]` | Rebuild project snapshot from scratch | §6.1 |
 | `/wiki-bridge-update` | `[project]` | Record bridge entries for confirmed wiki→project usage | §6.2 |
 | `/wiki-status` | — | Quick report: inbox count, uncategorized count, last digest, snapshot/bridge ages | ad-hoc |
@@ -452,6 +452,6 @@ Canonical commands Luna can invoke. Each one references the section that defines
 - Never write outside `~/Desktop/wiki LLM/` without explicit Luna approval per operation.
 - Never silently delete anything — always offer `archive/` first.
 - Never "clean up" wiki structure on your own initiative — propose, wait, execute.
-- Never embed project-specific references inside topic files — those belong in `project-bridges/` only.
+- Never embed project-specific references inside topic files — those belong in `project-bridges/` only. (Exception: `thoughts.md` `可能关联` field, which is the designated surface for tagging ephemeral ideas to projects.)
 - **Never silently overwrite contradictions.** If a new source contradicts existing wiki content, flag the conflict and let Luna decide (keep old / keep new / reconcile / keep both with context). Never resolve it on your own.
 - Never modify this CLAUDE.md without Luna's explicit approval.

@@ -1,15 +1,15 @@
 ---
-title: Sell-Before-Build Validation
+title: Sell-Before-Build
 type: [framework, methodology]
-aliases: [先卖后建, sell before build, pre-sell validation, sell-before-you-build]
-tags: [validation, lean-startup, early-stage, b2b, product-market-fit]
+aliases: [先卖后建, sell before build, pre-sell validation, sell-before-you-build, Sell-Before-Build Validation]
+tags: []
 sources:
   TH: Tyler Hogge via Xiaohongshu (2026-04-21) → ../sources/2026-04-21-tyler-hogge-sell-before-build.md
 last_updated: 2026-04-21
 provenance: mostly-sourced
 ---
 
-# Sell-Before-Build Validation
+# Sell-Before-Build
 
 > 先卖后建：在工程开发开始之前，通过真实销售对话验证需求的低成本方法。
 
