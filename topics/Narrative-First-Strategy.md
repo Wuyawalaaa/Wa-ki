@@ -47,8 +47,13 @@ provenance: mostly-sourced
 
 - [[Founder-As-KOL]] — a16z 2026 Creator Fellowship 是这个战略的一个机构化实践：训练 storyteller 派驻到 portfolio 公司执行创始人叙事。
 
+## 与 Sell-Before-Build 的关系
+
+【Luna】Narrative-first 和 [[Sell-Before-Build]] 不是两件独立的事，是同一件事（产品前的可信度 / 承诺资产积累）的两个聚焦点 —— 不是严格 trade-off。Narrative 做 reach（触达），SBB 把 reach 的一部分转成高浓度 commitment；愿意 commit 的人必须从更大的受众里筛出来，所以 reach 是 commitment 的上游，而不是替代。两者之间存在一个转化率，数字取决于「如何深入目标人群、让他们真的愿意承诺」的具体方法（SBB 的 7 步框架是其中一种）。
+
 ---
 
 ## Related
 
 - [[Founder-As-KOL]]
+- [[Sell-Before-Build]] — 同一问题的漏斗下游视角（把 reach 里的一部分转成高浓度 commitment）
