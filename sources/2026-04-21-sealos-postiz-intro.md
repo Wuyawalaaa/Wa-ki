@@ -1,5 +1,6 @@
 ---
-title: Sealos 开源社区介绍 Postiz
+title: Sealos open-source community introduces Postiz
+original_title: 狂揽 10.5k+ Star！Postiz 让社交媒体排期
 type: source
 source_url: https://xhslink.com/o/5sIVoumuoTY
 resolved_url: https://www.xiaohongshu.com/discovery/item/69e1f4e6000000001f00197e
@@ -9,7 +10,7 @@ posted: 2026-04-17 (Zhejiang)
 fetched: 2026-04-21
 ---
 
-# 狂揽 10.5k+ Star！Postiz 让社交媒体排期
+# 10.5k+ Stars! Postiz — social media scheduling
 
 **Original URL:** http://xhslink.com/o/5sIVoumuoTY
 **Platform:** Xiaohongshu (小红书)
@@ -17,16 +18,16 @@ fetched: 2026-04-21
 **Posted:** ~2026-04-17, Zhejiang
 **Fetched:** 2026-04-21
 
-## 主旨
+## Core claim
 
-介绍 Postiz 作为管理多个社交媒体账号的开源方案。作者强调可以用 Sealos 在 60 秒内完成部署。
+Introduces Postiz as an open-source way to manage multiple social media accounts. The author emphasizes 60-second deployment via Sealos.
 
-## 关键点
+## Key points
 
-- Postiz 为开源项目，GitHub 当时 10.5k+ Star（截至 2026-04-21 已达 29.2k，详见 postiz-github-readme 档）
-- 定位：一个人管理多平台社交账号
-- 强调工作流效率，减少在账号间切换
+- Postiz is open-source; GitHub 10.5k+ stars at the time of posting (as of 2026-04-21 has reached 29.2k — see postiz-github-readme archive)
+- Positioning: one operator manages multi-platform social accounts
+- Emphasizes workflow efficiency, reducing account-switching
 
-## 附带标签方向
+## Hashtag direction
 
-开源项目 · 海外社交媒体运营 · 网站推荐 · AI · 开发者社区 · 数字营销运营
+Open-source projects · overseas social media ops · website recommendations · AI · dev community · digital marketing ops

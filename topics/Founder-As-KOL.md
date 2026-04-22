@@ -4,41 +4,41 @@ type: [concept, practice]
 aliases: [founder as kol, founder-kol, founder influencer, founder-led content, 创始人KOL, 创始人当KOL, creator-led founder GTM]
 tags: []
 sources:
-  AZ: a16z 2026 Creator Fellowship（via 悠悠思想瞭望塔, Xiaohongshu, 2026-04-20） → ../sources/2026-04-21-a16z-founder-as-kol.md
+  AZ: a16z 2026 Creator Fellowship (via 悠悠思想瞭望塔, Xiaohongshu, 2026-04-20) → ../sources/2026-04-21-a16z-founder-as-kol.md
 last_updated: 2026-04-21
 provenance: mostly-sourced
 ---
 
 # Founder-As-KOL
 
-> 创始人本人（或专业内容人才代其执行）以个人账号承担品牌与产品的叙事、分发与获客的实践。
+> The practice of a founder (or dedicated content talent acting on their behalf) carrying the brand's and product's narrative, distribution, and customer acquisition through a personal account.
 
-## 模式定义
+## Pattern definition
 
-【推断】「Founder-As-KOL」指创始人把个人账号作为首要获客与品牌资产的做法，对应于把产品营销从公司账号迁到创始人个人维度。背后理据见 [[Narrative-First-Strategy]]。
+【推断】"Founder-As-KOL" refers to founders treating their personal account as the primary customer-acquisition and brand asset — shifting product marketing from the company account to the founder-personal dimension. The rationale sits in [[Narrative-First-Strategy]].
 
 ## Case: a16z 2026 Creator Fellowship
 
-【事实】a16z 在 2026 年推出 8 周训练营，系统培训 storytellers 与内容创作者；结业后把这些人派驻到 portfolio 公司，协助创始人做产品发布与内容分发。[AZ]
+【事实】In 2026 a16z launched an 8-week fellowship systematically training storytellers and content creators; graduates are embedded into portfolio companies to help founders with product launches and content distribution. [AZ]
 
-### 机制
+### Mechanics
 
 【事实】[AZ]
 
-| 环节 | 做法 |
+| Stage | Activity |
 |---|---|
-| 1. 选拔 | 招募叙事人才 / 内容创作者 |
-| 2. 训练 | 8 周 fellowship |
-| 3. 派驻 | 结业后进入 portfolio 公司 |
-| 4. 产出 | 协助创始人做 launch + content distribution |
+| 1. Selection | Recruit narrative talent / content creators |
+| 2. Training | 8-week fellowship |
+| 3. Placement | Embed graduates into portfolio companies |
+| 4. Output | Support founder launches + content distribution |
 
-### 信号意义
+### Signal value
 
-【推断】a16z 动用机构资源将「内容人才供给」系统化，暗示他们把创作者-叙事能力视为投后价值创造的标配，而非选配。对创始人的启示：这项能力正在被视作与技术、融资能力同级别的基础能力，而非锦上添花。
+【推断】That a16z is willing to spend institutional resources systematizing "content-talent supply" suggests they treat creator/narrative capability as standard post-investment value creation, not optional. Implication for founders: this is being treated as a baseline capability equal to engineering or fundraising, not a nice-to-have.
 
-## 适用条件
+## When it fits
 
-【推断】这个模式并非对所有创始人等效：产品处于同质化赛道（AI 应用、工具类 SaaS）时红利最大；硬技术 / 监管密集赛道可能不成立（可信度更多来自机构背书而非个人人设）。
+【推断】This pattern isn't uniformly applicable: it pays off most in commoditized categories (AI applications, horizontal SaaS) where features homogenize fast. In deep-tech / regulation-heavy categories it may not hold — credibility there comes more from institutional backing than from a personal persona.
 
 ---
 

@@ -16,31 +16,31 @@ license: AGPL-3.0
 
 > The ultimate social media scheduling tool, with a bunch of AI 🤖
 
-## 支持平台
+## Supported platforms
 
 Instagram · YouTube · Dribbble · LinkedIn · Reddit · TikTok · Facebook · Pinterest · Threads · X (Twitter) · Slack · Discord · Mastodon · Bluesky
 
-## 主要功能
+## Main features
 
-- 多平台内容排期
-- AI 驱动的内容生成
-- 分析与效果度量
-- 团队协作（评论、共享）
-- API 访问（与 N8N / Make.com / Zapier 集成）
-- 获客（lead capture）功能
+- Multi-platform content scheduling
+- AI-powered content generation
+- Analytics / performance measurement
+- Team collaboration (comments, sharing)
+- API access (integrates with N8N / Make.com / Zapier)
+- Lead capture
 
-## 技术栈与部署
+## Stack & deployment
 
 - NextJS + NestJS + Prisma (PostgreSQL) + Temporal
 - Monorepo, pnpm workspaces
-- 提供 Docker Compose 和 dev container 配置
+- Ships Docker Compose and dev container configs
 
-## 指标（2026-04-21）
+## Metrics (2026-04-21)
 
 - **29.2k GitHub stars**
 - 5.3k forks
-- 193 releases，最新 v2.21.6 (April 2026)
+- 193 releases, latest v2.21.6 (April 2026)
 
-## 定位
+## Positioning
 
-README 显式将 Postiz 定位为 Buffer / Hypefury / Twitter Hunter 的替代品。强调开源 + 可自托管，使用官方 OAuth，不需用户分享 API 凭据。
+The README explicitly positions Postiz as an alternative to Buffer / Hypefury / Twitter Hunter. Emphasizes open-source + self-hostable; uses official OAuth so users don't share API credentials.

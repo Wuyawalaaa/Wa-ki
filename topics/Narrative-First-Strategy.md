@@ -4,56 +4,56 @@ type: [concept, strategy]
 aliases: [narrative-first, narrative-first strategy, narrative-first competitive moat, content-as-moat, 叙事先行, 叙事先行战略]
 tags: []
 sources:
-  AZ: a16z 创始人 KOL 项目背后的思路（via 悠悠思想瞭望塔, Xiaohongshu, 2026-04-20） → ../sources/2026-04-21-a16z-founder-as-kol.md
+  AZ: Thinking behind a16z's founder-KOL program (via 悠悠思想瞭望塔, Xiaohongshu, 2026-04-20) → ../sources/2026-04-21-a16z-founder-as-kol.md
 last_updated: 2026-04-21
 provenance: mostly-sourced
 ---
 
 # Narrative-First Strategy
 
-> 当产品功能层面被快速同质化，差异化从「功能」转向「创始人叙事与可信度」的战略姿态。
+> A strategic posture where, as product features get rapidly commoditized, differentiation shifts from "features" to "founder narrative and credibility."
 
-## 核心论点
+## Core thesis
 
-【事实】当大多数竞争对手都能交付功能等价的产品时，差异化来自创始人的叙事和可信度，而不是功能本身。[AZ]
+【事实】When most competitors can deliver functionally equivalent products, differentiation comes from founder narrative and credibility rather than features themselves. [AZ]
 
-## 三个支撑趋势
+## Three supporting trends
 
 【事实】[AZ]
 
-### 1. 获客成本飙升
+### 1. Customer acquisition costs escalating
 
-- 搜索广告单条线索成本达 $70+
-- 创作者驱动的内容 ROI 达 388%，并随时间复利
+- Search ads hit $70+ per lead
+- Creator-driven content shows 388% ROI and compounds over time
 
-### 2. AI 驱动的产品同质化
+### 2. AI-driven product homogenization
 
-- 全球 AI 创业公司已达 22,000 家
-- 竞争优势的时间窗从「几年」压缩到「3–12 个月」
+- 22,000 AI startups globally
+- Competitive advantage window compressed from "years" to "3–12 months"
 
-### 3. 消费者偏好真实性
+### 3. Consumer preference for authenticity
 
-- 98% 的消费者认为品牌真实性对信任至关重要
-- 71% 的消费者不信任「AI 味过重」的品牌沟通
-- 52% 的消费者在识别出内容是 AI 生成后会减少互动
+- 98% of consumers view brand authenticity as critical for trust
+- 71% distrust "AI-heavy" brand communication
+- 52% reduce engagement upon detecting AI-generated content
 
-## 推论
+## Implications
 
-【推断】这个框架隐含的时间序：先建立叙事资产（受众、可信度、独特观点），再推出产品；叙事资产不会被功能复制击穿。反向顺序（先做产品、事后补内容）面临两个问题：冷启动期没有受众承接产品，以及 AI 生成的补位内容会触发上述 52% 的反效果。
+【推断】The framework implies a sequence: build narrative assets first (audience, credibility, distinctive POV), then launch product — narrative assets don't get punctured by feature copies. The reverse order (product first, content as afterthought) faces two problems: no audience to receive the product at cold-start, and AI-generated filler content triggers the 52% disengagement effect above.
 
-【推断】文中三个统计（388% ROI、3-12 个月窗口、52% AI-detect 降互动）来源未在原文标注；使用时应视为「方向性判断」而非精确数字，引用到决策里前最好回溯至原始研究。
+【推断】The three statistics cited (388% ROI, 3–12 month window, 52% AI-detect engagement drop) have no primary-source attribution in the XHS post — treat as directional judgments rather than precise figures, and trace to original research before citing them in actual decisions.
 
-## 作为实践的 instance
+## Instance of the practice
 
-- [[Founder-As-KOL]] — a16z 2026 Creator Fellowship 是这个战略的一个机构化实践：训练 storyteller 派驻到 portfolio 公司执行创始人叙事。
+- [[Founder-As-KOL]] — a16z's 2026 Creator Fellowship is an institutionalized instance of this strategy: training storytellers, embedding them in portfolio companies to execute founder narrative.
 
-## 与 Sell-Before-Build 的关系
+## Relationship to Sell-Before-Build
 
-【Luna】Narrative-first 和 [[Sell-Before-Build]] 不是两件独立的事，是同一件事（产品前的可信度 / 承诺资产积累）的两个聚焦点 —— 不是严格 trade-off。Narrative 做 reach（触达），SBB 把 reach 的一部分转成高浓度 commitment；愿意 commit 的人必须从更大的受众里筛出来，所以 reach 是 commitment 的上游，而不是替代。两者之间存在一个转化率，数字取决于「如何深入目标人群、让他们真的愿意承诺」的具体方法（SBB 的 7 步框架是其中一种）。
+【Luna】Narrative-first and [[Sell-Before-Build]] aren't two separate things — they're two focal points of the same thing (pre-product credibility / commitment-capital accumulation), not strict trade-offs. Narrative does reach; SBB converts a portion of that reach into high-density commitment. People willing to commit have to come from a larger audience first, so reach is *upstream* of commitment, not a substitute for it. Between them sits a conversion rate, and the number depends on the specific methods for going deep with target people and getting them to actually commit — SBB's 7-step framework is one such method.
 
 ---
 
 ## Related
 
 - [[Founder-As-KOL]]
-- [[Sell-Before-Build]] — 同一问题的漏斗下游视角（把 reach 里的一部分转成高浓度 commitment）
+- [[Sell-Before-Build]] — same problem, downstream view (converts a portion of reach into high-density commitment)

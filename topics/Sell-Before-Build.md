@@ -44,12 +44,12 @@ provenance: mostly-sourced
 - **Flexport** — 用假网站让富士康等大公司注册，在写代码之前就验证了货代软件的需求。
 - **Redo** — 用 $100 waitlist 验证需求。
 
-## 与 Narrative-First 的关系
+## Relationship to Narrative-First
 
-【Luna】SBB 和 [[Narrative-First-Strategy]] 不是两件独立的事，是同一件事（产品前的可信度 / 承诺资产积累）的两个聚焦点 —— 不是严格 trade-off。Narrative 做 reach（触达），SBB 把 reach 的一部分转成高浓度 commitment；愿意 commit 的人必须从更大的受众里筛出来，所以 reach 是 commitment 的上游，而不是替代。两者之间存在一个转化率，数字取决于「如何深入目标人群、让他们真的愿意承诺」的具体方法 —— SBB 的 7 步框架是一种方法；waitlist deposit、免费 pilot、consultative call 是其他方法，转化率各不相同。
+【Luna】SBB and [[Narrative-First-Strategy]] aren't two separate things — they're two focal points of the same thing (pre-product credibility / commitment-capital accumulation), not strict trade-offs. Narrative does reach; SBB converts a portion of that reach into high-density commitment. People willing to commit have to come from a larger audience first, so reach is *upstream* of commitment, not a substitute for it. Between them sits a conversion rate, and the number depends on the specific methods for going deep with target people and getting them to actually commit — SBB's 7-step framework is one such method; waitlist deposit, free pilot, consultative call are others, each with different conversion rates.
 
 ---
 
 ## Related
 
-- [[Narrative-First-Strategy]] — 同一问题的漏斗上游视角（做 reach，为 commitment 转化提供前置受众）
+- [[Narrative-First-Strategy]] — same problem, upstream view (does reach; supplies the audience that commitment conversion draws from)
