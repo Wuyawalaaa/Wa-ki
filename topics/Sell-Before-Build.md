@@ -47,7 +47,7 @@ provenance: mostly-sourced
 
 ## Channel — waitlists on Reddit for AI projects
 
-【事实】A common pre-product validation pattern observed on Reddit: many founders pair a simple concept with a waitlist to test market interest, instead of shipping an actual product. The waitlist's stated value is twofold — collect feedback before building, and filter high-intent users from passive interest. "真正的价值在于收集反馈和筛选用户，而非最终成品." [RW]
+【事实】A common pre-product validation pattern observed on Reddit (see also [[Reddit-First-Acquisition]] for the broader bootstrapped-channel thesis): many founders pair a simple concept with a waitlist to test market interest, instead of shipping an actual product. The waitlist's stated value is twofold — collect feedback before building, and filter high-intent users from passive interest. "真正的价值在于收集反馈和筛选用户，而非最终成品." [RW]
 
 【推断】This is the same move SBB names as one of "waitlist deposit, free pilot, consultative call" (see Luna's note below). What Reddit adds as a channel: the audience self-selects for technical curiosity and AI tolerance, which compresses the targeting work. The risk on Reddit specifically is that signups skew toward signal-watchers rather than buyers — Reddit's high-intent moments are about *interest in trying*, not *commitment to pay*. Useful for the feedback half of the goal; weaker for the willingness-to-pay half SBB's 30 sales conversations are designed to surface.
 
@@ -60,3 +60,4 @@ provenance: mostly-sourced
 ## Related
 
 - [[Narrative-First-Strategy]] — same problem, upstream view (does reach; supplies the audience that commitment conversion draws from)
+- [[Reddit-First-Acquisition]] — Reddit as the highest-leverage channel for bootstrapped pre-product validation

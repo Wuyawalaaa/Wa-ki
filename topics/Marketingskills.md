@@ -51,4 +51,5 @@ The AI then executes each chosen skill against this profile — outputs are cust
 
 - [[Minto-This-Skill]] — sibling: also a structural-skill pattern that shifts cognitive load from prompt to framework
 - [[Founder-As-KOL]] — adjacent: marketingskills supplies tactical execution power for founder-led marketing
+- [[Vibe-Marketing]] — adjacent: marketingskills is one concrete toolkit for the AI-drafts stage of the Vibe-Marketing workflow
 - [[Narrative-First-Strategy]] — adjacent: profile fields like brand tone and differentiation are the surface where narrative strategy meets tactical content
