@@ -6,6 +6,7 @@ tags: []
 sources:
   AZ: a16z 2026 Creator Fellowship (via 悠悠思想瞭望塔, Xiaohongshu, 2026-04-20) → ../sources/2026-04-21-a16z-founder-as-kol.md
   BD: Dan Koe 思维做创始人 IP — B2B 角度 (不辣瑪特, Xiaohongshu, 2026-03-28) → ../sources/2026-04-25-bulamate-dan-koe-b2b-founder-ip.md
+  EL: Edelman–LinkedIn B2B Thought Leadership Impact Report — primary source for the ~90% receptivity figure (web-search verified 2026-04-25, not yet archived locally) → https://www.edelman.com/expertise/Business-Marketing/2025-b2b-thought-leadership-report
 last_updated: 2026-04-25
 provenance: mostly-sourced
 ---
@@ -45,9 +46,18 @@ provenance: mostly-sourced
 
 【事实】The same pattern shows up in B2B with a specific shape: founders port [[Dan-Koe]]'s content philosophy into the B2B context to build a "founder IP" rather than a company brand. The 2026 framing names this **"Founder POV"** — content read as *founder narratives*, deliberately serialized rather than one-off. Reference instance: HeyReach's collective thought-leadership model, where multiple voices in the company push opinion content under a unified narrative. [BD]
 
-【事实】Cited statistic: 95% of B2B decision-makers report greater openness to sales/marketing from suppliers whose founders consistently produce quality opinion content. [BD]
+【事实】The XHS post cites a 95% figure for B2B decision-maker openness to outreach from suppliers producing consistent thought-leadership content. [BD]
 
-【推断】The 95% figure has no primary-source attribution in the post — treat as directional, not load-bearing. Even discounted, the directional claim is consistent with the [[Narrative-First-Strategy]] thesis: in commoditized B2B categories, the differentiator collapses from "feature comparison" to "do we trust this founder's read of the space." That trust is what serialized POV content actually accumulates.
+【推断】**Verified 2026-04-25: the 95% figure is misattributed.** It conflates two separate real findings:
+
+| Real figure | Source | What it actually measures |
+|---|---|---|
+| 95-5 rule | LinkedIn / Ehrenberg-Bass Institute | 95% of B2B customers are *not actively in-market* at any given time (market readiness, not outreach openness) |
+| ~90% (9 in 10) | Edelman–LinkedIn B2B Thought Leadership Impact Report | Decision-makers "moderately or very likely to be more receptive to sales/marketing outreach from a company consistently producing high-quality thought leadership" |
+
+The XHS post took the ~90% Edelman finding and tagged it with the 95% number from the unrelated 95-5 rule. **Use 90% (Edelman–LinkedIn) when this claim shows up in decision documents; do not cite "95%."** The directional point — that consistent thought leadership materially improves outreach receptivity — is robust; the specific 95% figure as written is wrong.
+
+【推断】The directional claim is consistent with the [[Narrative-First-Strategy]] thesis: in commoditized B2B categories, the differentiator collapses from "feature comparison" to "do we trust this founder's read of the space." That trust is what serialized POV content actually accumulates.
 
 【推断】"Serialized" is the load-bearing word. One sharp opinion post is a content tactic; a recurring cadence with continuity is a [[Series-Content-Strategy]] play, and that's what converts ad-hoc readers into subscription-feel followers. Founder-As-KOL in B2B without serialization tends to underperform because each post resets the relationship.
 

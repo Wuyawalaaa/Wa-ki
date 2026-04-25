@@ -5,6 +5,7 @@ aliases: [GEO, generative engine optimization, AI search optimization, ai搜索�
 tags: []
 sources:
   SR: Shopify 出了 3200 单 — 往死做 Reddit + GEO (Sasa, Xiaohongshu, 2026-03-27) → ../sources/2026-04-25-sasa-shopify-reddit-geo.md
+  TC: Tinuiti Q1 2026 AI Citation Trends Report — primary report verifying the +73% Reddit figure (web-search verified 2026-04-25, not yet archived locally) → https://tinuiti.com/research-insights/research/ai-citation-trends-report/
 last_updated: 2026-04-25
 provenance: mostly-sourced
 ---
@@ -27,6 +28,17 @@ provenance: mostly-sourced
 | Most-cited source by AI engines (in this case) | Reddit discussions, not the brand's own pages |
 | Increase in Reddit citations across AI engines (4 months) | +73% (per Tinuiti report) |
 
+【推断】**Verified 2026-04-25: the +73% figure is real but narrower than the XHS post implies.** The source is Tinuiti's **Q1 2026 AI Citation Trends Report** — a real primary report tracking high-commercial-intent prompts across 9 verticals and 7 AI platforms (ChatGPT, Perplexity, Google AI Mode, Google AI Overviews, Gemini, Microsoft Copilot, Meta AI) over the four months ending January 2026. The actual claim:
+
+| Layer of the claim | What's true |
+|---|---|
+| +73% growth | Real — but specifically in **commercial categories** (technology, electronics), not a blanket trend |
+| Reddit overall citation frequency | **Dropped ~50%** in the same period — net citation share is *down*, not up |
+| Sole-source citations | **Up 31%** since Oct 2025 — when AI cites Reddit, it's increasingly the only source |
+| Per-platform variation | Huge: Perplexity ≈24–31% of citations from Reddit; ChatGPT >5%; Gemini just 0.1% |
+
+The XHS post compresses "Reddit citations grew 73% in commercial verticals" into "Reddit citations grew 73%" — which mis-suggests a uniform tailwind. **For a brand using GEO, the relevant question isn't "is Reddit growing?" but "is Reddit growing on the platform my buyers use, in my vertical?" — Perplexity-heavy commercial categories: yes, strongly; Gemini, generic content: no.**
+
 ## 3-part GEO strategy
 
 【事实】[SR]
@@ -45,7 +57,7 @@ provenance: mostly-sourced
 
 【推断】The Reddit-as-citation-source pattern follows from how generative engines were trained and how they retrieve at inference time. Reddit threads have three properties that AI engines reward simultaneously: high human-graded signal (upvotes), structured Q&A shape (matches user-query intent), and the dataset-training reality that Reddit is a heavyweight share of common-crawl-derived corpora. SEO's optimization surface (Google's ranking algorithm) and GEO's optimization surface (the corpus + retrieval layer of an LLM) reward different signals — which is why a brand can rank #1 on Google and still be invisible in Perplexity if it never shows up in Reddit citations.
 
-【推断】The +73% Reddit-citation figure is attributed to a Tinuiti report but no link is given in the source — Tinuiti is a real US digital-marketing agency, so the figure is plausibly real but should be traced to the primary report before being used in a decision document.
+【推断】The Tinuiti report exists and was traced 2026-04-25 — see corrected breakdown in the data-points table above. Primary report: *Tinuiti Q1 2026 AI Citation Trends Report*.
 
 ## Distinction from SEO
 
