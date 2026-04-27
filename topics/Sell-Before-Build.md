@@ -61,3 +61,4 @@ provenance: mostly-sourced
 
 - [[Narrative-First-Strategy]] — same problem, upstream view (does reach; supplies the audience that commitment conversion draws from)
 - [[Reddit-First-Acquisition]] — Reddit as the highest-leverage channel for bootstrapped pre-product validation
+- [[Cat-Wu]] — strategic answer to her takeaway #3 ("decide what to build is the bottleneck"): SBB makes the market do the deciding

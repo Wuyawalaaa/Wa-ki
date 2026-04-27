@@ -130,3 +130,4 @@ The keystone shift is from execution efficiency to **[[Evaluability]]** — how 
 - [[Evaluability]] — the keystone replacement for execution efficiency in AI-era usability
 - [[Epistemic-UI]] — the interface technique for surfacing AI uncertainty to the supervisor
 - [[Slow-AI]] — UX patterns for AI runs that take minutes-to-hours
+- [[Cat-Wu]] — the team-side mirror; takeaway #6 (95% automation problem) is the Plausibility Trap restated

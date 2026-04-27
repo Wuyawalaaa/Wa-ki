@@ -44,3 +44,4 @@ provenance: mostly-sourced
 
 - [[Intent-UX]] — the parent paradigm; the Intent Surface is designed specifically to overcome this barrier
 - [[Evaluability]] — the downstream metric; articulation barrier compromises *capture*, evaluability compromises *verification*
+- [[Cat-Wu]] — same cognitive asymmetry one level up: the PM/team analogue ("decide what to build" is the team's articulation barrier)

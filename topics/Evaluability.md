@@ -50,3 +50,4 @@ These are not bugs of evaluation; they are why evaluation needs UX support — p
 - [[Intent-UX]] — the parent paradigm where Evaluability replaces execution efficiency as the load-bearing metric
 - [[Epistemic-UI]] — the interface technique that makes Evaluability tractable by surfacing uncertainty
 - [[Articulation-Barrier]] — the upstream failure (intent capture); Evaluability is the downstream failure (output verification)
+- [[Cat-Wu]] — team-side counterpart: writing evals + asking models to explain failures (takeaway #5)

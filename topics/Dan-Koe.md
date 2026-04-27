@@ -5,7 +5,8 @@ aliases: [Dan Koe, dan koe, 百万博主 Dan, dankoe]
 tags: []
 sources:
   XD: 百万博主 Dan 的 2 小时内容创作核心 SOP (晓萱新媒体运营, Xiaohongshu, 2026-03-21) → ../sources/2026-04-25-xiaoxuan-dan-koe-2hour-sop.md
-last_updated: 2026-04-25
+  XB: Dan Koe 讲透了 — 创始人最低成本的获客方式 (栩博士AI新商业, Xiaohongshu, 2026-04-25) → ../sources/2026-04-26-xubo-dan-koe-lowest-cost-acquisition.md
+last_updated: 2026-04-26
 provenance: mixed
 ---
 
@@ -43,6 +44,14 @@ provenance: mixed
 
 - The B2B variant of [[Founder-As-KOL]] explicitly imports Dan's philosophy — "Founder POV as serialized IP" is Dan-Koe applied with a B2B audience filter.
 - [[Series-Content-Strategy]] is the structural sibling: Dan's framework optimizes the **production** side; series-content optimizes the **reception** side (continuity, "next episode" hook). Solo founders running both at once get compounding returns — production efficiency × audience retention.
+
+## Secondary framing: founder IP as the lowest-cost acquisition channel
+
+【事实】A second-hand framing of Dan Koe's thesis (栩博士) positions founder IP as **the lowest-cost customer acquisition method for founders** — i.e., compared to ads, SDRs, or paid channels, systematic founder expression is argued to be the cheapest source of qualified inbound. The mechanism cited: founder IP builds long-term trust through systematic expression; AI assists with expression, but the core asset is **synthesizing experience and judgment into reusable forms** that continuously attract customers. [XB]
+
+【推断】The "lowest-cost acquisition" framing is a useful CFO-readable reframe of what is otherwise discussed as "founder content / personal brand." It moves the strategic conversation from "should I spend time on content?" to "what's the cost-per-qualified-lead vs. paid alternatives?" — which is a comparison most founders can actually evaluate against their existing CAC.
+
+【推断】Caveat: the secondary source (栩博士) is mostly a sales pitch for their own AI agent product, with the Dan Koe content amounting to ~2 sentences. Treat as a **secondary attestation** of the existing Dan Koe thesis rather than independent evidence. The "lowest-cost" framing is the only genuinely new contribution; everything else paraphrases what's already on this page.
 
 ---
 
