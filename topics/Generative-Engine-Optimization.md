@@ -7,6 +7,7 @@ sources:
   SR: Shopify 出了 3200 单 — 往死做 Reddit + GEO (Sasa, Xiaohongshu, 2026-03-27) → ../sources/2026-04-25-sasa-shopify-reddit-geo.md
   TC: Tinuiti Q1 2026 AI Citation Trends Report — primary report verifying the +73% Reddit figure (web-search verified 2026-04-25, not yet archived locally) → https://tinuiti.com/research-insights/research/ai-citation-trends-report/
   CI: QF Concept Inventory — terminology-consistency framing (#7) → ../sources/2026-04-26-qf-concept-inventory.md
+  GB: GEO brand marketing — structured content + JSON-LD + 3rd-party syndication (Xiaohongshu summary, 2026-04-28) → ../sources/2026-04-28-geo-brand-marketing-jsonld.md
 last_updated: 2026-04-28
 provenance: mostly-sourced
 ---
@@ -99,6 +100,22 @@ This is GEO operating at the *definition* layer, not the citation layer — and 
 This makes consistency more important than perfection of any single piece. A project that uses one mediocre term consistently over two years beats a project that uses three excellent terms inconsistently across the same period — the second project is fragmenting its own GEO compounding.
 
 【推断】The implication ties back to [[Category-Design]]: when a founder coins a category term, the GEO compounding happens through this same channel. Coining + sustained-consistent-use is the doctrine; inconsistent use *kills* the strategy even if the term itself is good.
+
+## Alternative implementation: structured content + third-party syndication
+
+【事实】A second GEO implementation path documented in Chinese marketing circles, demonstrated via a B2C brand case (infant formula): [GB]
+
+| # | Step | Mechanic |
+|---|---|---|
+| 1 | Product page restructuring | Convert transactional copy to pain-point resource. Example: "List 15 questions [target buyer] worries about, answer each with verified data and real scenarios." Goal: pages AI systems want to reference. |
+| 2 | Technical SEO with JSON-LD markup | Topic blogs with direct answers placed prominently; FAQ schema + comparison tables; all information encoded as structured data for AI parsing |
+| 3 | Third-party credibility building | Brand mentions across: community forums (Reddit, Quora), guest posts + review features, review platforms (G2, Capterra, Product Hunt), press releases at milestones |
+
+【事实】Documented case results using this approach: 16.7M website visits; best day 56 inquiries; largest deal $189K USD; 67% of traffic AI-driven; one optimized page generated 6,200+ visitors and 380+ qualified inquiries in one week. [GB]
+
+【推断】This path addresses a different starting surface than the Reddit-first strategy. Reddit-first starts from an existing third-party conversation platform and works inward to the brand. This approach starts from owned product pages and syndicates outward to third-party platforms. For B2C brands with product pages (e-commerce, consumer goods), the product-first entry point may be more natural. Source attribution uncertain — a Chinese XHS summary of content by a YouTube creator named "Dan" (identity unverified). [GB]
+
+【推断】The JSON-LD step is notable because it explicitly targets AI *parsing* rather than human readability. Structured data is legible to both humans and machines, but JSON-LD is the format AI systems increasingly use to ingest product and entity data at inference time — which makes it a higher-leverage format for GEO than for traditional SEO.
 
 ## Connections
 

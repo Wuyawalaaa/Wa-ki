@@ -5,7 +5,8 @@ aliases: [one-person company, one person company, solo company, super individual
 tags: []
 sources:
   WH: 裸辞VP的一人公司，拆解可复制思路 (WaveHeart.澜心, Xiaohongshu, ~2026-04-24) → ../sources/2026-04-27-waveheart-justin-welsh-one-person-company.md
-last_updated: 2026-04-27
+  XO: 低价是一人公司走岔的一步 + Hormozi 3-tier product structure (Xiaohongshu, 2026-04-28) → ../sources/2026-04-28-opc-low-price-misstep.md
+last_updated: 2026-04-28
 provenance: mostly-sourced
 ---
 
@@ -50,6 +51,24 @@ Skip stage 1 and stages 2–3 have no demand. Skip stage 2 and stage 3 has nothi
 ## Why "super individual" is more than a marketing term
 
 【推断】The Chinese term **超级个体 (super individual)** is doing real work the English phrase "solopreneur" doesn't. *Solopreneur* implies a category of small business; *super individual* implies a person whose individual leverage now matches what previously required a firm. The framing matters because it changes the comparison set: a solopreneur compares to other solopreneurs and feels small; a super individual compares to mid-sized firms and asks "what does the firm have that I don't, and can I substitute it with leverage?" The reframe is the prerequisite for the strategy to feel reasonable rather than fringe.
+
+## Pricing misstep: low price + volume
+
+【事实】A common failure pattern: launch cheap standardized products + high-volume content to compensate for thin margins. Documented failure point: after 20 posts burnout sets in; each post reaches dozens of people; ¥39 products generate near-zero net revenue. [XO]
+
+【推断】The failure is structural, not an execution shortfall. Cheap products require volume → volume requires production grind → grind burns the solo operator out before volume reaches break-even. No amount of effort closes the math for one person.
+
+## Counter: Hormozi's 3-tier product structure
+
+【事实】Alex Hormozi's counter-framework reverses the conventional entry sequence: **start premium and non-scalable first, then move to mid-tier, then mass market.** [XO]
+
+【事实】Illustration: Tesla launched the Roadster (¥250K+) first, then Model S, then Model 3 — each expansion increased reach while the premium tier maintained value perception for the full line. [XO]
+
+【事实】Diagnostic question: "你现在的产品结构里，有没有一个'贵10倍'的选项?" (Does your current product mix include a "10x more expensive" option?) [XO]
+
+【推断】The mechanism: a premium 1-on-1 entry tier does two things simultaneously — it generates enough per-unit revenue that the operator isn't grinding volume, and it sets a reference frame so that cheaper products introduced later feel like *accessible access* to something valuable rather than the default cheap offering. The expensive tier is what gives the mass product its pricing power.
+
+【推断】This maps onto the leverage sequence (§Three replicable steps): the premium tier is the "credibility + first revenue" stage; the mass-market tier is what gets standardized and automated later. Rushing to standardization before establishing premium demand skips the step that sets pricing power — which is exactly the path to the ¥39 burnout trap.
 
 ## Adjacencies
 

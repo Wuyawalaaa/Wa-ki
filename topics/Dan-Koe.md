@@ -6,7 +6,8 @@ tags: []
 sources:
   XD: 百万博主 Dan 的 2 小时内容创作核心 SOP (晓萱新媒体运营, Xiaohongshu, 2026-03-21) → ../sources/2026-04-25-xiaoxuan-dan-koe-2hour-sop.md
   XB: Dan Koe 讲透了 — 创始人最低成本的获客方式 (栩博士AI新商业, Xiaohongshu, 2026-04-25) → ../sources/2026-04-26-xubo-dan-koe-lowest-cost-acquisition.md
-last_updated: 2026-04-27
+  XC: Dan Koe CASTLE 5-step first-business framework (Xiaohongshu summary, 2026-04-28) → ../sources/2026-04-28-dankoe-castle-framework.md
+last_updated: 2026-04-28
 provenance: mixed
 ---
 
@@ -53,6 +54,24 @@ provenance: mixed
 【推断】The "lowest-cost acquisition" framing is a useful CFO-readable reframe of what is otherwise discussed as "founder content / personal brand." It moves the strategic conversation from "should I spend time on content?" to "what's the cost-per-qualified-lead vs. paid alternatives?" — which is a comparison most founders can actually evaluate against their existing CAC.
 
 【推断】Caveat: the secondary source (栩博士) is mostly a sales pitch for their own AI agent product, with the Dan Koe content amounting to ~2 sentences. Treat as a **secondary attestation** of the existing Dan Koe thesis rather than independent evidence. The "lowest-cost" framing is the only genuinely new contribution; everything else paraphrases what's already on this page.
+
+## CASTLE framework: first-business validation
+
+【事实】Five-step methodology for starting and validating a first business: [XC]
+
+| Letter | Step | Mechanic |
+|---|---|---|
+| C | Crystallize Direction | Start with problems you personally suffered through, tried, and overcame — lived experience is credibility |
+| A | Architecture Path | Observe how others explain similar problems; extract: pain points → transformation → steps → examples → actions. Skip complex theory. |
+| S | Share Openly | Document before expertise — record learning, experiments, obstacles, and progress consistently |
+| T | Test Lightly | Package methodology into the smallest deliverable: checklist, template, manual, or single conversation. Helpfulness over perfection. |
+| L | Listen to Feedback | First 10 users refine approach and surface blind spots — genuine responses, not expertise validation |
+
+Note: the post describes this as "5步法" (5-step) despite CASTLE having 6 letters. The "E" step is absent from available summaries. [XC]
+
+【推断】CASTLE and the 2-hour SOP serve different phases: **CASTLE** addresses problem-selection and first-product validation (pre-audience, pre-revenue); the **2-hour SOP** is for ongoing content production once an audience exists. They're sequential, not competing.
+
+【推断】The "start with a problem you personally solved" principle (C step) is the lived-experience variant of [[Sell-Before-Build]]: instead of selling before building a product, you credential yourself through suffering-and-solution before packaging anything.
 
 ---
 
