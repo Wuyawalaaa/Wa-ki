@@ -9,7 +9,7 @@ attribution: Xiaohongshu post ("Gemini已经干掉了99%的品牌营销工作者
 
 Xiaohongshu post framing Gemini/AI as displacing 99% of brand marketers, with a practical 3-step GEO implementation framework demonstrated via an infant formula brand case.
 
-**Attribution note:** The post references "油管大神Dan" (YouTube big-shot Dan). The fetch model attributed this to Dan Koe, but the content — B2C brand marketing, infant formula, corporate-style GEO — is atypical for Dan Koe's usual solo-creator focus. Attribution is **unverified**; treat as an unnamed YouTube marketing practitioner named Dan.
+**Attribution note:** The post references "油管大神Dan" (YouTube big-shot Dan). The fetch model attributed this to Dan Koe — confirmed incorrect. Dan Koe's content is entirely personal brand / solo-creator; no B2C product marketing, infant formula, or JSON-LD material exists in his corpus (verified 2026-04-28 via web search). Source is an unidentified YouTube marketing practitioner named Dan, likely operating in the Chinese-market digital marketing space.
 
 ## Headline case
 
