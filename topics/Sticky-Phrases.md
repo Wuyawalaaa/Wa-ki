@@ -5,7 +5,7 @@ aliases: [sticky phrases, memorable framings, sticky language, quotable language
 tags: []
 sources:
   AB: Antoine Buteau — "Lessons from Lulu Cheng Meservey" (verbatim Lulu examples) → ../sources/2026-04-26-buteau-lessons-from-lulu.md
-  LM: Lulu Cheng multi-source frameworks → ../sources/2026-04-28-lulu-cheng-multi-source-frameworks.md
+  LM: Lulu Cheng primary-source pointers — fs.blog Knowledge Project + Lenny podcast (audio); the Flack "Tactics" post does NOT cover this framework → ../sources/2026-04-28-lulu-cheng-multi-source-frameworks.md
   CI: QF Concept Inventory (frames the engineering of sticky phrases as a marketing discipline) → ../sources/2026-04-26-qf-concept-inventory.md
 last_updated: 2026-04-28
 provenance: mostly-sourced

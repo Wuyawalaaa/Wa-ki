@@ -1,40 +1,53 @@
 ---
 title: How press fits into a crypto communications playbook
 url: https://a16zcrypto.com/posts/article/media-relations-crypto/
+author: Paul Cafiero (Communications Partner, a16z crypto)
 publisher: a16z crypto
-fetched: 2026-04-28 (WebSearch summary; full primary fetch pending — rate-limited)
+published: 2026-01-15
+fetched: 2026-04-28 (verified full-fetch)
 type: primary-essay
-notes: a16z crypto's framework on the lever inventory available to crypto-founder communications. The QF Concept Inventory cites this as the source for #8. Re-verify direct quotes when rate limit resets.
+notes: Verbatim primary source — full-fetch confirmed. Two important corrections vs earlier summary-level archive: (1) Cafiero enumerates FIVE levers, not seven — KOL outreach is not a separate lever in his framing; (2) the post does NOT advocate go-direct-only — it argues media engagement BECOMES NECESSARY as companies scale.
 ---
 
-# Key extracted facts (search-summary level)
+# Verified primary content
 
-## The multi-channel lever inventory
+## Author / publication
 
-a16z crypto enumerates communications channels available to a crypto founder:
+Paul Cafiero, Communications Partner at a16z crypto. 2026-01-15.
 
-| Lever | What it covers |
-|---|---|
-| Owned content | Blogs, videos, whitepapers — first-party long-form |
-| Social — brand | Corporate / project handle |
-| Social — personal | Founder personal account |
-| Community | Discord, Telegram, Signal |
-| Speaking opportunities | Conferences, IRL community events |
-| Media / press relations | Journalists, podcasts |
-| KOL relationships | Influencer outreach |
+## The five levers (verified)
 
-## Sequencing principle (paraphrased from search summary)
+1. **Owned content** — "creating your own blog, producing a video, or posting a whitepaper"
+2. **Social media** — both brand and personal accounts (treated as one lever in this framing)
+3. **Community building** — Discord, Signal, Telegram, WhatsApp
+4. **Speaking opportunities and conferences**
+5. **Media/press relations** — proactive and reactive engagement
 
-"No single tactic is best — the right mix depends on stage, audience, and goals." Channel mix should match where the project is, not what's fashionable in comms.
+Earlier summary-level archive listed seven levers (separating brand-vs-personal social, and pulling out KOL relationships). The actual a16z post groups social into one lever and does not enumerate KOL as separate.
 
-## Adjacent context
+## Core framework principle (verbatim)
 
-a16z's broader posture (Marc Andreessen / Ben Horowitz era): a deliberate move away from traditional media. When a16z announces a fund or thesis, they don't need a journalist to validate it — they have their own distribution. In mid-2025 a16z launched a New Media team and an 8-week New Media Fellowship to systematize this.
+> "No one communication strategy or tactic is better than the other."
 
-## Going Direct framing (a16z-wide, not crypto-specific)
+> "Your core narrative and messages should hold true no matter who you're talking to or through which medium you're communicating. But you'll lean into different elements depending on who you're talking to."
 
-a16z's New Media is "founder-friendly," fast-paced, on X / YouTube / podcasts where conversation happens in real time. Owned channels include a daily podcast and daily newsletter. They use single narrative pushes that involve several formats simultaneously.
+Example given: "investors will care about the details and future growth prospects, while the media will care about the headline."
 
-## Verification status
+## On media engagement specifically
 
-The lever list and "no single tactic is best" framing match the inventory's framing. Direct quotes and any specific stage-by-stage sequencing recommendations need verification against the full post.
+The post does NOT advocate "skip media, go direct only." It argues the opposite at the right stage:
+
+> "as a startup grows, it will become impossible to remain out of the public eye"
+
+Media's role per Cafiero: drives audience growth, enables other channels — "Media can drive people back to your own channels, help build your...profile."
+
+## Sequencing
+
+The post does NOT prescribe a sequence. The framing is "matching to context" rather than "stages":
+- Different audiences care about different elements of the same narrative
+- Different mediums emphasize different elements
+- The narrative core stays constant
+
+## Implication
+
+a16z crypto's actual position is more pluralist than the QF Concept Inventory paraphrased. The inventory's framing of "the first three levers are the only ones active in Phases 1-3" is the inventory's own application of the framework to a zero-budget founder context — not a claim Cafiero himself makes.

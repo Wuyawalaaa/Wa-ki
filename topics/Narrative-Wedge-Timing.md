@@ -4,10 +4,10 @@ type: [framework, concept]
 aliases: [narrative wedge, narrative wedge timing, narrative timing, category timing, term-coining timing, 叙事窗口期, 叙事楔入时机]
 tags: []
 sources:
-  DC: Decentralised.co — "Navigating Crypto Narratives — The Narrative Wedge" → ../sources/2026-04-28-decentralised-narrative-wedge.md
+  DC: Joel John — "The Narrative Wedge" (Decentralised.co, 2023-08-03) → ../sources/2026-04-28-decentralised-narrative-wedge.md
   CI: QF Concept Inventory — applies the wedge framework to category-term planting timing → ../sources/2026-04-26-qf-concept-inventory.md
 last_updated: 2026-04-28
-provenance: mixed
+provenance: mostly-sourced
 ---
 
 # Narrative Wedge Timing
@@ -16,13 +16,47 @@ provenance: mixed
 
 ## Source pattern
 
-【事实】Decentralised.co's "Narrative Wedge" essay argues that narratives pick up steam at the beginning of a bull market, driven by technological developments. Within a single bitcoin cycle, narratives create mini-cycles: one era dominated by ICOs, another by DeFi, then NFTs, then gaming, then AI, then a next theme. Sectors flourish during the mid-to-late bull market when speculative capital is abundant; exits must be timely because narrative bubbles burst quickly when sentiment turns. [DC]
+【事实】Joel John's "Narrative Wedge" essay (Decentralised.co, 2023-08-03): [DC]
 
-## The "wedge"
+> "Narratives pick up steam at the beginning of a bull market. These tailwinds usually occur due to technological developments."
 
-【事实】The named wedge is the **gap between public interest and actual user adoption**. Search trends can collapse to bear-market levels (50% reduction in attention) while user counts remain ~100× their pre-cycle baseline — the wedge is the divergence between attention and retention. [DC]
+Attention precedes capital — new technologies (DeFi smart contracts, NFT standards, play-to-earn mechanics) generate excitement → drives prices upward → attracts venture capital. Self-reinforcing during bull markets, collapses when narratives exhaust themselves.
 
-【推断】The implication for builders: narrative cycles and adoption cycles run on different clocks. When attention drops, builders often interpret that as the sector dying; the wedge metaphor reframes it as "attention is fickle, retention is the underlying signal." Early entrants who keep building during the attention trough are positioned to ride the next attention wave with a meaningfully larger user base than they had at the previous peak.
+## What the wedge actually is
+
+【事实】The wedge in Joel John's framing is the **timing mismatch between narrative cycles and product development cycles**: [DC]
+
+| Cycle | Duration |
+|---|---|
+| Narrative | Months — ramps fast, exhausts faster |
+| Product development | 18–24+ months |
+
+A founder who picks a theme during a narrative peak ships into a dead narrative. The wedge widens during the build, and when the product finally launches, the attention has already moved on.
+
+> 【事实】"Themes picked by founders and investors based on narrative windfalls can be terrible as attention flows elsewhere by the time products go live." [DC]
+
+## Worked example: Axie Infinity (Joel John's case)
+
+【事实】Token prices peaked October 2021 while user adoption had already plateaued. Venture-backed Web3 gaming startups launched January 2022 onward — by then users had vanished and venture funding dried up. The product timeline (multi-year build) and narrative timeline (peaked Oct '21) were misaligned. [DC]
+
+## When narrative + product align
+
+【事实】The exception to wedge collapse: [DC]
+
+> "Compound, UniSwap and Bored Apes are each an instance of narrative tailwinds blending with product usage to produce outsized returns for investors."
+
+These projects entered during narrative peaks while simultaneously gaining authentic user adoption. The timing aligned: narrative attention matched product-market fit maturation.
+
+## Two distinct traps Joel John names
+
+【事实】[DC]
+
+| Trap | What goes wrong |
+|---|---|
+| Too early | "Being early is a moat in itself. But it could also mean it takes months before someone builds conviction on what you are making." |
+| Too late | "If one is to go by price action alone as a driver for emerging theses, the odds are pretty high that they are entering a market very late." |
+
+The ultimate risk: launching products into dead narratives — the launch becomes "a bet on the return of a bull market." [DC]
 
 ## Application to category-term planting
 

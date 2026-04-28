@@ -4,7 +4,7 @@ type: [framework]
 aliases: [physics-based communications, P=F/A communications, force-allocation comms, attack-defense comms framework, pressure-force-area, 物理学传播框架]
 tags: []
 sources:
-  LM: Lulu Cheng multi-source frameworks (Flack Tactics, fs.blog Knowledge Project, Lenny podcast) → ../sources/2026-04-28-lulu-cheng-multi-source-frameworks.md
+  LM: Lulu Cheng primary-source pointers — fs.blog Knowledge Project + Lenny podcast (audio, not yet transcribed); the Flack "Tactics" post does NOT cover this framework → ../sources/2026-04-28-lulu-cheng-multi-source-frameworks.md
   CI: QF Concept Inventory → ../sources/2026-04-26-qf-concept-inventory.md
 last_updated: 2026-04-28
 provenance: mixed

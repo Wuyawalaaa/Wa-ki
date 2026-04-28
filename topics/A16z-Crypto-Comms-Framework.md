@@ -4,8 +4,8 @@ type: [framework]
 aliases: [a16z crypto communications, a16z crypto comms playbook, a16z crypto media relations, comms lever inventory, crypto founder comms levers]
 tags: []
 sources:
-  AZ: a16z crypto — "How press fits into a crypto communications playbook" (a16zcrypto.com) → ../sources/2026-04-28-a16z-crypto-media-relations.md
-  CI: QF Concept Inventory → ../sources/2026-04-26-qf-concept-inventory.md
+  AZ: Paul Cafiero (Communications Partner, a16z crypto) — "How press fits into a crypto communications playbook" (a16zcrypto.com, 2026-01-15) → ../sources/2026-04-28-a16z-crypto-media-relations.md
+  CI: QF Concept Inventory — applies Cafiero's framework to a zero-budget founder context → ../sources/2026-04-26-qf-concept-inventory.md
 last_updated: 2026-04-28
 provenance: mostly-sourced
 ---
@@ -16,27 +16,41 @@ provenance: mostly-sourced
 
 ## The lever inventory
 
-【事实】a16z crypto enumerates seven channels: [AZ]
+【事实】Cafiero enumerates **five** levers: [AZ]
 
 | Lever | What it is |
 |---|---|
-| Owned content | Blogs, videos, whitepapers — first-party long-form |
-| Social — brand | Corporate / project handle |
-| Social — personal | Founder personal account |
-| Community | Discord, Telegram, Signal — direct member relationships |
-| Speaking | Conferences, IRL events |
-| Media / press | Journalists, podcasts |
-| KOL relationships | Influencer outreach |
+| Owned content | "creating your own blog, producing a video, or posting a whitepaper" |
+| Social media | Both brand and personal accounts (treated as one lever) |
+| Community building | Discord, Signal, Telegram, WhatsApp |
+| Speaking opportunities | Conferences, IRL events |
+| Media / press relations | Proactive and reactive engagement |
 
-## Core principle
+The QF Concept Inventory's expansion to seven levers (separating brand-vs-personal social, pulling out KOL outreach) is the inventory's adaptation, not Cafiero's original taxonomy. [CI]
 
-【事实】"No single tactic is best — the right mix depends on stage, audience, and goals." [AZ]
+## Core principle (verbatim)
 
-【推断】The principle reframes comms strategy from "what should I do?" to "where am I, and which lever does *that* unlock?" — a stage-conditional question rather than a best-practice question.
+> 【事实】"No one communication strategy or tactic is better than the other." [AZ]
 
-## Sequencing — when each lever becomes available
+> 【事实】"Your core narrative and messages should hold true no matter who you're talking to or through which medium you're communicating. But you'll lean into different elements depending on who you're talking to." [AZ]
 
-【推断】Not all levers work at all stages. From the inventory's adaptation to a zero-budget zero-followers founder: [CI]
+Example Cafiero gives: "investors will care about the details and future growth prospects, while the media will care about the headline." [AZ]
+
+【推断】The principle reframes comms strategy from "what should I do?" to "matching to context" — different audiences care about different elements of the same narrative; different mediums emphasize different elements. The narrative core stays constant.
+
+## Cafiero's stance on media (important)
+
+【事实】The post does NOT advocate "skip media, go direct only" — the opposite at the right stage: [AZ]
+
+> "as a startup grows, it will become impossible to remain out of the public eye"
+
+Media's role per Cafiero: drives audience growth, enables other channels — "Media can drive people back to your own channels, help build your...profile."
+
+【推断】This is a meaningful distinction from a strict [[Go-Direct]] reading. Cafiero's framework allows that direct channels are primary at early stage, but argues media engagement becomes load-bearing as the project scales — not optional, not avoidable. The two doctrines aren't contradictory; they're addressing different stages.
+
+## Sequencing — the inventory's stage-conditional adaptation
+
+【推断】**Cafiero himself does not prescribe a sequence** — his framing is "match to context." But the QF Concept Inventory adapts the lever list to a zero-budget zero-followers founder context, mapping which levers are actually viable at stage zero: [CI]
 
 | Lever | Available at stage zero? | When it activates |
 |---|---|---|
@@ -45,10 +59,10 @@ provenance: mostly-sourced
 | Social — brand | Partially — secondary, retweets founder | Activates as project gains independent identity |
 | Community | No | Premature without a follower base — opening Discord at zero is empty room |
 | Speaking | Spaces guest appearances only | Hosting / panels require credibility built first |
-| Media / press | No | No story without traction |
+| Media / press | No | No story without traction (Cafiero would add: required as you scale) |
 | KOL outreach | Soft only — DMs to specific accounts | Formal outreach assumes you have something to offer |
 
-Activating a later lever before its preconditions are in place produces the failure modes the framework is designed to prevent.
+Activating a later lever before its preconditions are in place produces the failure modes the framework is designed to prevent. Note this stage-conditional view is the inventory's overlay on Cafiero's pluralist baseline.
 
 ## Why this is a useful framework
 

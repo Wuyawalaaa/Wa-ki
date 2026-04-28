@@ -44,6 +44,19 @@ provenance: mostly-sourced
 | Cultural Erogenous Zones | Messaging — fit your message to existing audience care-zones | [[Cultural-Erogenous-Zones]] |
 | Physics-Based Communications | Force allocation — spread (defense) vs concentrate (offense) | [[Physics-Based-Communications]] |
 | Sticky Phrases | Tactics — analogy, anecdote, ABBA structure | [[Sticky-Phrases]] |
+| COMMS PLAN X equation | Strategic alignment — derive comms plan from business objective | (section below) |
+
+## The COMMS PLAN X equation
+
+【事实】From Lulu's *Comms Foundation #2: Tactics* (Flack, 2022-09-08): [LM]
+
+> "<COMMS PLAN X> = will help instill <BELIEF A> in <AUDIENCE B>, to make them want to take <ACTIONS C>, which will help you achieve <BUSINESS OBJECTIVE D>"
+
+> "Just like with a math equation, to solve for X, first define what the other variables are."
+
+【推断】The framework works backwards: business objective → audience identification → belief installation → desired actions → comms plan. It's the strategic-alignment layer; the other five frameworks are the targeting / messaging / tactical / rhetorical layers that operate inside whichever plan the equation produces.
+
+【推断】Useful as a discipline-check before any individual comms move: if you can't write the equation for what you're about to publish, the move probably isn't goal-aligned — it's content-for-content's-sake.
 
 ## How the frameworks compose
 

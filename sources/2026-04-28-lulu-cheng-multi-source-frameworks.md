@@ -1,53 +1,51 @@
 ---
-title: Lulu Cheng Meservey — Physics-Based Comms, Sticky Phrases, Four Pillars (multi-source synthesis)
+title: Lulu Cheng Meservey — primary-source pointers (multi-URL)
 urls:
   - https://www.getflack.com/p/tactics
   - https://fs.blog/knowledge-project-podcast/lulu-cheng-meservey/
   - https://www.lennyspodcast.com/videos/navigating-comms-and-pr-lulu-cheng-meservey-substack-activision-blizzard/
-  - https://medium.com/@lemon.yuan/lulu-cheng-meserveys-comms-playbook-5-truths-for-bending-reality-086e29d711ee
-fetched: 2026-04-28 (WebSearch summary; full primary fetch pending — rate-limited)
-type: primary-pointers + summary
-notes: Multiple Lulu sources surfaced via search but couldn't be fully fetched today. Captured the search-summary content here as a working anchor — the URLs above are the canonical primary sources for verbatim citation when rate limit resets.
+fetched: 2026-04-28 (Flack Tactics — verified full-fetch; podcasts — audio, not transcribed)
+type: primary-pointers
+notes: IMPORTANT CORRECTION from earlier archive. The Flack "Tactics" post does NOT cover Physics-Based Communications or Sticky Phrases. Those frameworks live in the podcast appearances (Knowledge Project, Lenny). The Tactics post contains a different framework — the COMMS PLAN X equation. Pages citing this archive as the source for Physics-Based or Sticky-Phrases need to be corrected (already done; see Physics-Based-Communications.md and Sticky-Phrases.md).
 ---
 
-# Key extracted facts (search-summary level)
+# Verified primary content from Flack "Tactics" (Sep 8, 2022)
 
-## Four pillars of excellent communications
+## What this post actually contains
 
-Strategy / Tactics / Message / Delivery — the top-level breakdown Lulu uses to organize comms work.
+A single tactical framework — the **COMMS PLAN X equation**:
 
-## Three strategy components
+> "<COMMS PLAN X> = will help instill <BELIEF A> in <AUDIENCE B>, to make them want to take <ACTIONS C>, which will help you achieve <BUSINESS OBJECTIVE D>"
 
-Message / Medium / Messenger.
+Lulu's framing:
 
-## Strategic frame: "ends, ways, and means"
+> "Just like with a math equation, to solve for X, first define what the other variables are."
 
-Borrowed from military strategy — Lulu uses this to bring clarity to communications goals. Ends = what outcome; ways = which tactics; means = which resources.
+The framework works backwards: business objective → audience → belief to install → actions desired → comms plan that produces them.
 
-## Physics-Based Communications (P = F / A)
+This is a strategic-alignment framework — not a tactical-rhetoric framework like Physics-Based Comms or Sticky Phrases.
 
-> "Pressure equals force over surface area."
+## What this post does NOT contain
 
-**Defense (under attack)**: spread the force — distribute the response across many surfaces, dilute the pressure on any single point.
+- Physics-based communications / P=F/A formula / spread-vs-concentrate force
+- Concentric Circles framework
+- Cultural Erogenous Zones
+- Sticky Phrases / ABBA structure / "put the pill in some cheese"
 
-**Offense (attacking)**: concentrate the force — pick one platform, one audience, one message, push hard at a single point.
+These frameworks exist in OTHER Lulu sources:
 
-The same physical formula yields opposite advice depending on which side you're playing — a useful diagnostic when planning a comms move.
-
-## Sticky Phrases techniques
-
-| Technique | Lulu's example |
+| Framework | Primary source location |
 |---|---|
-| Analogy | "put the pill in some cheese" |
-| Anecdotes over adjectives | Use stories instead of subjective descriptors ("innovative," "passionate" — adjective filler that adds nothing) |
-| ABBA structure for slogans | Mentioned but not detailed in available summaries |
-
-## Cultural Erogenous Zones (referenced again)
-
-> "People have things that they either care about or don't and you're not going to change that. So it's a huge lift to try to change someone's worldview or their passions. It's a light lift to take the thing you want to talk about and just shape it into to fit into their worldview or their passions."
-
-(Direct quote, surfaced via Buteau synthesis — see ../sources/2026-04-26-buteau-lessons-from-lulu.md)
+| Physics-Based Communications | Audio: Knowledge Project podcast (fs.blog) and likely Lenny's podcast |
+| Cultural Erogenous Zones | Lenny's podcast (verbatim quote also in Buteau synthesis) |
+| Concentric Circles | Lenny's podcast (timestamps 20:25, 21:32) |
+| Sticky Phrases | Likely audio + Buteau synthesis quotes |
+| COMMS PLAN X equation | Flack Tactics post (this URL) |
 
 ## Verification status
 
-Direct quotes need verification against the full Flack "Tactics" post and the Knowledge Project / Lenny podcast audio. The frameworks themselves (Physics-Based, Sticky Phrases) are well-attested across multiple secondary sources but verbatim Lulu phrasing should be confirmed before further citation.
+- Flack Tactics post: VERIFIED full-fetch
+- Knowledge Project audio: not transcribed publicly; would need direct listen
+- Lenny's podcast audio: not transcribed publicly; would need direct listen
+
+For the next round of tightening, listening to the Knowledge Project audio (~1.5h) is the highest-leverage move — it likely contains verbatim Lulu phrasing for Physics-Based and Sticky-Phrases that no current text source captures.

@@ -1,30 +1,53 @@
 ---
-title: Navigating Crypto Narratives — The Narrative Wedge
+title: The Narrative Wedge
 url: https://www.decentralised.co/p/the-narrative-wedge
+author: Joel John
 publisher: Decentralised.co
-fetched: 2026-04-28 (WebSearch summary; full primary fetch pending — rate-limited)
+published: 2023-08-03
+fetched: 2026-04-28 (verified full-fetch)
 type: primary-research-essay
-notes: The named "Narrative Wedge" essay from Decentralised.co — the canonical source the QF Concept Inventory cites for #9. Captured here from search-results summary; specific quotes and figures should be re-verified against the full essay before citing further.
+notes: Verbatim primary source — full-fetch confirmed verbatim quotes. Earlier summary-level archive had the "wedge" definition wrong; corrected here. The wedge is the **timing mismatch between narrative cycles and product development cycles**, not (as I had originally summarized) the gap between attention and retention.
 ---
 
-# Key extracted facts (search-summary level)
+# Verified primary content
 
-## Narrative cycles
+## Author / publication
 
-Narratives pick up steam at the beginning of a bull market. Within a single bitcoin cycle, narratives create mini-cycles — one era dominated by ICOs, another by DeFi, then NFTs, then gaming, then AI, then a new theme.
+Joel John, Decentralised.co, 2023-08-03.
 
-## "Narrative wedge" definition
+## What the wedge actually is
 
-The gap between public *interest* in a sector and actual *user adoption*. Search trends can collapse to bear-market levels (50% reduction in interest) while user counts remain 100× their pre-cycle baseline — the wedge is the divergence between attention and retention.
+The wedge in Joel John's framing is **the gap between narrative timing and product timing**:
 
-## Sector timing claim
+- Narratives last a short time (months)
+- Products take 18–24+ months to develop
+- A founder who picks a theme during a narrative peak will ship into a dead narrative
 
-Sectors flourish during mid-to-late bull-market phase when speculative capital is abundant. Exits must be timely; narrative bubbles burst quickly when sentiment turns.
+This is a **timing-mismatch** wedge, not an attention-vs-adoption wedge.
 
-## Implication for builders
+## Verbatim quotes
 
-Early entrants in specific sectors produce outsized returns when narrative + usage scale simultaneously. Plant a category term too early, nobody notices; too late, someone else owns it.
+> "Narratives pick up steam at the beginning of a bull market. These tailwinds usually occur due to technological developments."
 
-## Verification status
+> "Compound, UniSwap and Bored Apes are each an instance of narrative tailwinds blending with product usage to produce outsized returns for investors."
 
-Claims above are summary-level — direct quotes and exact figures need confirmation against the full essay. The page has been registered in this archive so the inventory's [CI] citations to it have a target.
+> "Themes picked by founders and investors based on narrative windfalls can be terrible as attention flows elsewhere by the time products go live."
+
+> "Being early is a moat in itself. But it could also mean it takes months before someone builds conviction on what you are making."
+
+> "If one is to go by price action alone as a driver for emerging theses, the odds are pretty high that they are entering a market very late."
+
+## Cycle structure (as Joel John describes it)
+
+Attention precedes capital. New technologies (DeFi smart contracts, NFT standards, play-to-earn mechanics) generate public excitement → drives prices upward → attracts venture capital. Self-reinforcing during bull markets, collapses when narratives exhaust themselves.
+
+## Worked example: Axie Infinity
+
+Token prices peaked October 2021 while user adoption had already plateaued. Venture-backed Web3 gaming startups launched January 2022 onward — by then users had vanished and venture funding dried up. The product timeline (multi-year build) and narrative timeline (peaked Oct '21) were misaligned.
+
+## Two distinct traps named
+
+| Trap | What goes wrong |
+|---|---|
+| Too early | Being first is a moat — but conviction-building from others can take months, during which you have nothing |
+| Too late | Going by price action means you're entering after the wedge has already opened — products launch into a dead narrative; the launch becomes "a bet on the return of a bull market" |

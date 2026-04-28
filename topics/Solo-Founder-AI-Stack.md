@@ -18,25 +18,38 @@ provenance: mostly-sourced
 
 【推断】The role split: human provides taste, judgment, and selection; AI handles drafting, structuring, asset variation, and repetitive validation. Output volume scales without headcount; the bottleneck moves from execution capacity to decision quality. [CI]
 
-## Case: Austin Lau at Anthropic
+## Case: Anthropic Marketing's Claude stack
 
-### Team structure
+### What the primary source actually documents
 
-【事实】Austin Lau ran the entire growth marketing operation solo at Anthropic for ~10 months. Anthropic was valued at $380B post-Series-G (Feb 2026). Channels covered: paid search, paid social, mobile app stores, email, SEO. Described in coverage as a "non-technical one-person team." [AN]
+【事实】Anthropic Marketing's official post covers Claude's role across **multiple** marketing functions, not a single solo operator: [AN]
 
-### Workflows automated
+| Function | Claim |
+|---|---|
+| Influencer marketing | Scripts for influencers and podcasts → "freeing up 100+ hours per month" |
+| Customer marketing | Drafts case studies in 30 min vs 2.5 hrs → "saving 10 hours per week" |
+| Digital marketing (Austin Lau's role) | Ad creative + Google Ads workflows |
+| Product marketing | Skills + Projects for launch briefs → "saving 5-10 hours per launch" |
+| Partner marketing | Self-serve event enablement → "reducing time spent on trade show prep by 40%" |
+
+### Austin Lau's specific workflows
 
 【事实】[AN]
 
-| Workflow | Time before | Time after |
-|---|---|---|
-| Ad creative variations (Figma plugin) | ~30 min/ad | ~30 sec/ad |
-| Google Ads copy: brainstorm → refine → upload-ready CSV | hours/week | minutes |
-| Responsive search-ads from prior campaign-performance data | manual | automated |
+| Workflow | Time savings |
+|---|---|
+| Figma plugin generating ad creative variations across aspect ratios | "30 minutes every time he updates a large batch of creatives" — built in 45–60 min |
+| Google Ads responsive search-ad workflow with brainstorming + CSV export | "what used to take 30 minutes per ad now takes 30 seconds" |
 
-### The non-coder claim
+### The non-coder principle (verbatim Austin Lau)
 
-【事实】Austin "went from never having opened a terminal to building Figma plugins and automated ad-generation workflows, without writing a single line of code." Within one week of starting with Claude Code, he had two production workflows shipped. [AN]
+> 【事实】"You don't need to know how to code. All you need to know is how to explain your challenge and what you're trying to solve in a very clear, concise manner." [AN]
+
+> 【事实】"I can actually go out and build these things. So the gap between 'I wish this existed' and 'I can actually build this myself' is actually much smaller than people realize." [AN]
+
+### What the primary source does NOT claim
+
+【推断】The framing that Austin "ran the entire Anthropic growth marketing operation solo for ~10 months" comes from secondary coverage (Medium articles), not from the Anthropic blog itself. The Anthropic post is a multi-function case study, not a solo-operator profile. Pages building on this should not over-claim the solo-team framing — the load-bearing pattern (one operator + AI handles labor; human keeps judgment) is real and widely demonstrated, but the specific "non-technical-one-person-team" branding is secondary-coverage editorialization.
 
 ## Decomposition for any solo operator
 
@@ -51,12 +64,23 @@ provenance: mostly-sourced
 | Discourse monitoring | Track topic-relevant conversations, identify engagement opportunities |
 | Reply drafting | First-pass drafts; founder edits for voice and adds the actual idea |
 
-## What stays human
+## What stays human (verbatim Austin Lau)
 
-【推断】Two things AI does not handle: [CI]
+【事实】[AN]
+
+> "Claude is a great brainstorming partner, but sometimes it doesn't get it right on the first try. A lot of the work I do is riffing and going back and forth to help refine the copy over time."
+
+> "All of the copy and examples that we provide Claude were written in partnership with the product marketing and copywriting teams"
+
+The post articulates the human-evaluator role explicitly:
+
+> "Austin is evaluating each headline against what he knows resonates with Anthropic's audiences. Does the value prop land? Is the tone right?"
+
+【推断】Three things AI does not handle: [AN, CI]
 
 1. **Strategic decisions** — what to write, who to target, which platform to push first. The framework operating beneath the work is the founder's contribution; AI cannot derive it.
-2. **Voice editing** — pure AI output is detectable and increasingly rejected by audiences. Every AI-generated draft needs founder revision passes for tone, register, idiosyncrasy. The minimum-viable-edit is real and uncompressible.
+2. **Brand-fit and tone judgment** — does the value prop land, is the tone right. These calls require the operator's accumulated context about audience.
+3. **Foundational quality standards** — the copy and examples Claude is trained on come from the human team. The minimum-viable-edit on outputs is uncompressible.
 
 ## Why the pattern works
 
