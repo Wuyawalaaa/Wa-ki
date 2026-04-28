@@ -19,7 +19,7 @@ provenance: mostly-sourced
 
 ## Core philosophy
 
-【事实】The marketer (or business leader) plays the role of **director** — strategizing and steering AI tools and workflows. This replaces traditional entry-level positions, agency partners, and interns. The stated result is a "super individual + AI" marketing system (超级个体 + AI). [JV]
+【事实】The marketer (or business leader) plays the role of **director** — strategizing and steering AI tools and workflows. This replaces traditional entry-level positions, agency partners, and interns. The stated result is a "super individual + AI" marketing system ([[One-Person-Company|超级个体]] + AI). [JV]
 
 ## Four-stage workflow
 
@@ -49,4 +49,5 @@ provenance: mostly-sourced
 
 - [[marketingskills]] — concrete toolkit for the AI-drafts-stage of the workflow
 - [[Founder-As-KOL]] — when the super individual is the founder
+- [[One-Person-Company]] — the broader operator concept Vibe Marketing instantiates inside marketing specifically
 - [[Dan-Koe]] — content-production framework that fits naturally inside this shape

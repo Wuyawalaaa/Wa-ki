@@ -6,7 +6,7 @@ tags: []
 sources:
   XD: 百万博主 Dan 的 2 小时内容创作核心 SOP (晓萱新媒体运营, Xiaohongshu, 2026-03-21) → ../sources/2026-04-25-xiaoxuan-dan-koe-2hour-sop.md
   XB: Dan Koe 讲透了 — 创始人最低成本的获客方式 (栩博士AI新商业, Xiaohongshu, 2026-04-25) → ../sources/2026-04-26-xubo-dan-koe-lowest-cost-acquisition.md
-last_updated: 2026-04-26
+last_updated: 2026-04-27
 provenance: mixed
 ---
 
@@ -44,6 +44,7 @@ provenance: mixed
 
 - The B2B variant of [[Founder-As-KOL]] explicitly imports Dan's philosophy — "Founder POV as serialized IP" is Dan-Koe applied with a B2B audience filter.
 - [[Series-Content-Strategy]] is the structural sibling: Dan's framework optimizes the **production** side; series-content optimizes the **reception** side (continuity, "next episode" hook). Solo founders running both at once get compounding returns — production efficiency × audience retention.
+- [[Essays-vs-Articles]] is Dan's separate philosophical thesis: *what* the production should output. The 2-hour SOP on this page is the production engine; Essays-vs-Articles argues the engine should be aimed at essays (thinking-as-writing) rather than articles (packaged conclusions) because AI commoditizes the latter.
 
 ## Secondary framing: founder IP as the lowest-cost acquisition channel
 
@@ -59,5 +60,6 @@ provenance: mixed
 
 - [[Founder-As-KOL]] — Dan's philosophy is the B2B founder-IP reference frame
 - [[Series-Content-Strategy]] — production-side counterpart to Dan's reception-side framework
+- [[Essays-vs-Articles]] — Dan's separate thesis on *what* solo creators should produce (essays, not articles)
 - [[Sell-Before-Build]] — same validate-cheap pattern applied to products instead of posts
 - [[Narrative-First-Strategy]] — upstream thesis that makes Dan's mechanics economically necessary
