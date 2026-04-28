@@ -7,7 +7,8 @@ sources:
   AZ: a16z 2026 Creator Fellowship (via 悠悠思想瞭望塔, Xiaohongshu, 2026-04-20) → ../sources/2026-04-21-a16z-founder-as-kol.md
   BD: Dan Koe 思维做创始人 IP — B2B 角度 (不辣瑪特, Xiaohongshu, 2026-03-28) → ../sources/2026-04-25-bulamate-dan-koe-b2b-founder-ip.md
   EL: Edelman–LinkedIn B2B Thought Leadership Impact Report — primary source for the ~90% receptivity figure (web-search verified 2026-04-25, not yet archived locally) → https://www.edelman.com/expertise/Business-Marketing/2025-b2b-thought-leadership-report
-last_updated: 2026-04-25
+  CI: QF Concept Inventory — comparative claim that founder-led beats brand accounts (#10) → ../sources/2026-04-26-qf-concept-inventory.md
+last_updated: 2026-04-28
 provenance: mostly-sourced
 ---
 
@@ -41,6 +42,25 @@ provenance: mostly-sourced
 ## When it fits
 
 【推断】This pattern isn't uniformly applicable: it pays off most in commoditized categories (AI applications, horizontal SaaS) where features homogenize fast. In deep-tech / regulation-heavy categories it may not hold — credibility there comes more from institutional backing than from a personal persona.
+
+## Why founder accounts beat brand accounts
+
+【推断】The comparative claim, sharpened: in low-trust environments — crypto, early-stage anything, post-scam-cycle audiences — individual founders putting their reputation on the line are more credible than anonymous brand handles. The founder's name is the project's **first credibility asset**, not a supplementary one. People trust real people more than logos because logos can't be embarrassed. [CI]
+
+【推断】The asymmetry has a structural source: a brand handle posts → readers read marketing copy. A founder handle posts → readers read a person taking a position. Same content, different category in the reader's mind. The mental classification happens before the content is evaluated, so brand-handle content needs to be ~10× as good to clear the same bar.
+
+## Two-account-in-parallel pattern
+
+【推断】The advanced form: founder personal account + project brand account running as **equal-importance channels**, not as substitute / primary-secondary. [CI]
+
+| Account | Voice | Role |
+|---|---|---|
+| Founder personal | First-person, idiosyncratic, can take stances | Direct narrative engine; where positions live |
+| Project brand | Project-voice, more structured, less personal | Documentation, announcements, milestone surfaces |
+
+Both accounts amplify each other through cross-references and complementary framings — quote-tweets, reposts with extension, parallel content with different angles on the same idea. Per-content evaluation at composition time decides which account is the better fit; the rule isn't "founder gets all narrative content" but "the right account for *this* piece of content."
+
+【推断】The asymmetric pitfall: putting all weight on the brand account is the well-trodden failure mode (looks corporate, doesn't accumulate trust). The reverse pitfall — putting *all* weight on founder personal and never publishing on the brand — leaves no canonical surface for the project itself, which makes it harder for others to reference the project independently of the founder. The two-account discipline is genuinely two accounts, not one with a duplicate.
 
 ## B2B variant: founder POV as serialized IP
 

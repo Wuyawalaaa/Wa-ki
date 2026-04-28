@@ -63,7 +63,7 @@ Each post recruits a different cohort: scrollers (demo), already-warm fans (laun
 
 ## Adjacencies
 
-- [[Concentric-Circles]] — strategy 1 (precise targeting) is Lulu Cheng's framework expressed in launch terms: identify your innermost ring (creatives interested in design/products/AI) before crafting the message. The staged sequence then propagates outward through engagement.
+- [[Concentric-Circles]] — strategy 1 (precise targeting) is [[Lulu-Cheng-Meservey]]'s framework expressed in launch terms: identify your innermost ring (creatives interested in design/products/AI) before crafting the message. The staged sequence then propagates outward through engagement.
 - [[Series-Content-Strategy]] — staged-launch is a *short-form* version of serialized content: multiple posts referencing each other within a 3-day window rather than across months.
 - [[Sell-Before-Build]] — staged-launch is downstream: SBB validates demand pre-build; this playbook converts that demand into users post-build.
 
