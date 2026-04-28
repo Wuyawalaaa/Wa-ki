@@ -5,7 +5,7 @@ aliases: [Cat Wu, cat wu, AI PM, AI PM paradigm, AI PM 新范式, Anthropic Clau
 tags: []
 sources:
   CW: Cat Wu 访谈·AI PM 新范式 — 阿進營業中's Chinese summary of Cat Wu's Lenny's Podcast interview (Xiaohongshu, 2026-04-24) → ../sources/2026-04-26-ajin-cat-wu-ai-pm-paradigm.md
-last_updated: 2026-04-26
+last_updated: 2026-04-27
 provenance: mostly-sourced
 ---
 
@@ -84,3 +84,5 @@ Once you see this pattern, the takeaways predict each other: minimal documentati
 - [[Sell-Before-Build]] — strategic answer to the decision-making bottleneck
 - [[Intent-UX]] — parent paradigm where the Plausibility Trap (and takeaway #6) live
 - [[Dan-Koe]] — structural parallel for solo content; same "cut what's automatable, invest saved cycles in taste/decisions" pattern
+- [[Daniela-Amodei]] — Anthropic president; her hiring/humanities framing complements Cat Wu's product/PM framing on the same company
+- [[Anthropic-Product-Sensibility]] — adjacent: Cat Wu's product-design decisions (research-preview labels, minimal docs) are the concrete instance of the design stance that page describes

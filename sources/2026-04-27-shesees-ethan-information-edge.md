@@ -44,6 +44,6 @@ The post promotes a membership program offering curated content delivered daily,
 
 ## Notes for ingest
 
-- "Ethan, ex-Morning Brew" — first name only in the post; not enough to disambiguate. Likely Ethan Brooks or another writer; would need confirmation if cited as primary attribution.
-- The talent-map + chain-question technique is **standard journalism shoe-leather methodology**, repackaged for content creators. The novelty is the *framing* (writer's edge = info access, not craft), not the tactics themselves.
+- "Ethan, ex-Morning Brew" — first name only in the post. **Traced 2026-04-27 to Ethan Brooks of The Hustle** (not Morning Brew — Chinese coverage commonly conflates The Hustle and Morning Brew, which are competitor B2B newsletters). See `2026-04-27-ethan-brooks-attribution-trace.md` for the trace.
+- The talent-map + chain-question technique is **standard journalism shoe-leather methodology**, repackaged for content creators. **Web search did not surface these as Brooks's own phrasing** — they are most likely the shesees author's distillation of his approach, not direct teaching from him. The novelty in the post is the *framing* (writer's edge = info access, not craft), not the tactics themselves.
 - Membership-promo at the end means this post is partly a sales piece — the methodology is genuine, but treat the framing as marketed.
