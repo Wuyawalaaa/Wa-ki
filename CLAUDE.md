@@ -53,6 +53,10 @@ Wiki content should remain **project-agnostic**. Do not embed references to spec
 - Used only when content is genuinely too vague to give its own atomic page.
 - NOT a pre-queue. If a concept is clearly distinct, it gets its own page immediately.
 
+### `pending.md`: unprocessable-link holding file
+- Links a digest couldn't process (auth-wall, dead link, fetch failure), each with a minimum-word reason tag + date. Cleared on resolve — deleted, not struck through (§5 step 9).
+- Exists so `inbox.md` can always end a digest empty; it is not a backlog Luna is expected to groom.
+
 ### Maps of Content (MOCs)
 - When 4+ atomic pages form a discoverable cluster, propose a `topics/_MOC-<Cluster>.md` as a navigation hub linking them.
 - MOCs contain links + brief descriptions, not claims. They're navigation, not content.
@@ -151,7 +155,7 @@ Triggered by: `/wiki-ingest` / "消化 inbox" / "digest inbox" / "整理一下 i
 
 **3. Auto-ingest path** (no prefix):
 
-  a. **Fetch source.** If URL, WebFetch. If auth-walled, note and ask Luna to paste manually or skip. If `[Hermes/*]` block, treat per §7. If image, copy to `sources/images/` + summarize via vision.
+  a. **Fetch source.** If URL, WebFetch. If auth-walled (or dead link / fetch failure), note it, append the link to `pending.md` with a minimum-word reason tag (e.g. `[auth-wall]`, `[dead-link]`) + date, and ask Luna to paste content or skip. Never leave it in `inbox.md`. If `[Hermes/*]` block, treat per §7. If image, copy to `sources/images/` + summarize via vision.
 
   b. **Archive** to `sources/YYYY-MM-DD-<slug>.md` (kebab-case slug per §4).
 
@@ -182,7 +186,7 @@ Triggered by: `/wiki-ingest` / "消化 inbox" / "digest inbox" / "整理一下 i
 
 **8. Proposals** — if `project-snapshots/` has content AND new concepts were added → generate project-connection proposals in the digest chat report (see §6.3). Do NOT modify bridge files.
 
-**9. Archive + clear.** Move processed `inbox.md` content to `archive/inbox/YYYY-MM-DD.md`. Reset `inbox.md` to empty template.
+**9. Archive + clear.** Move processed `inbox.md` content to `archive/inbox/YYYY-MM-DD.md`. Reset `inbox.md` to empty template. `inbox.md` must end empty (clean template) after every digest, with zero exceptions — anything not processed goes to `pending.md` (§5 3a), never lingers in the inbox. When a `pending.md` item is later resolved (Luna pastes content or says skip), delete that entry from `pending.md`.
 
 **10. Git commit:** `digest: YYYY-MM-DD — N items (X updated, Y created, Z thoughts), topics: <list>`.
 
