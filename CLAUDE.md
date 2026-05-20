@@ -155,7 +155,7 @@ Triggered by: `/wiki-ingest` / "消化 inbox" / "digest inbox" / "整理一下 i
 
 **3. Auto-ingest path** (no prefix):
 
-  a. **Fetch source.** If URL, WebFetch. If auth-walled (or dead link / fetch failure), note it, append the link to `pending.md` with a minimum-word reason tag (e.g. `[auth-wall]`, `[dead-link]`) + date, and ask Luna to paste content or skip. Never leave it in `inbox.md`. If `[Hermes/*]` block, treat per §7. If image, copy to `sources/images/` + summarize via vision.
+  a. **Fetch source.** If URL, WebFetch. **For x.com / twitter.com URLs, first try the public syndication endpoint** before declaring auth-wall — `curl -sL "https://cdn.syndication.twimg.com/tweet-result?id=<ID>&token=a"` returns full tweet JSON (text, author, media, edit history) without authentication for public tweets. Limits: works only on public tweets from public accounts; does NOT yield thread children, X long-form Articles, or protected content — those still need Luna to paste. If auth-walled after the syndication attempt (or dead link / fetch failure), note it, append the link to `pending.md` with a minimum-word reason tag (e.g. `[auth-wall]`, `[dead-link]`, `[x-thread-needs-paste]`, `[x-article-needs-paste]`) + date, and ask Luna to paste content or skip. Never leave it in `inbox.md`. If `[Hermes/*]` block, treat per §7. If image, copy to `sources/images/` + summarize via vision.
 
   b. **Archive** to `sources/YYYY-MM-DD-<slug>.md` (kebab-case slug per §4).
 
